@@ -1,0 +1,15 @@
+{
+  "name": "hib-prototype",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
