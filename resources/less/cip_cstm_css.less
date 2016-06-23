@@ -303,6 +303,90 @@ div.login-pf-lg {
 }
 
 //-------------------------------------------------------------------------------------------------------------
+//Callouts ----------------------------------------------------------------------------------------------------
+
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+
+	h4 {
+	  margin-top: 0;
+	  margin-bottom: 5px;
+	}
+
+	code {
+	  border-radius: 3px;
+	}
+
+	p:last-child {
+	    margin-bottom: 0;
+	}
+}
+
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout-default {
+	border-left-color: @gray-light;
+
+	h4 {
+		color: @gray-light;
+	}
+}
+.bs-callout-primary {
+  border-left-color:@brand-primary;
+
+	h4 {
+		color: @brand-primary;
+	}
+}
+
+.bs-callout-success {
+  border-left-color: @nhs-green;
+	background-color: @nhs-lighter-green;
+
+	h1 {
+		color: @nhs-green;
+	}
+
+	h2 {
+		color: @nhs-green;
+	}
+
+	h4 {
+		color: @nhs-green;
+	}
+}
+
+.bs-callout-danger {
+  border-left-color: @brand-danger;
+
+	h4 {
+	  color: @brand-danger;
+	}
+}
+
+.bs-callout-warning {
+	border-left-color:@brand-warning;
+
+	h4 {
+	  color: @brand-warning;
+	}
+}
+
+.bs-callout-info {
+  border-left-color: @brand-info;
+
+	h4 {
+	  color: @brand-info;
+	}
+}
+
+//-------------------------------------------------------------------------------------------------------------
 //Style Guide -------------------------------------------------------------------------------------------------
 
 //Grid
