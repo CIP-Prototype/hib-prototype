@@ -3,4 +3,4 @@ To install less:
 * npm install less -g
 
 To compile the less, at the root of the project run (UNIX):
-`lessc  new-demo/resources/less/cip_main.less new-demo/resources/css/cip_main.css`
+```lessc  new-demo/resources/less/cip_main.less new-demo/resources/css/cip_main.css```
