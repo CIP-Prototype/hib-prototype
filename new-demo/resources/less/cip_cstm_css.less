@@ -1,0 +1,464 @@
+//-------------------------------------------------------------------------------------------------------------
+//Bootstrap / Style Tweaks --------------------------------------------------------------------------------------
+
+//tweaks not covered by the theme (custom bootstrap variables)
+
+//Tweak to correct font weight for headings
+h1, h2, h3, h4{
+	font-weight: @font-weight-bold; //bold
+}
+
+//Tweaks to btn to bring them more in line with gds styling
+.btn {
+	border-width: 3px;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+}
+
+//not a BS default class but used to tweak col placement / alignment between sections
+.container-wrapper{
+	width: 100%;
+}
+
+
+
+label{
+	font-size: @font-size-lg;
+	font-weight: @font-weight-bold;
+}
+
+//border thickness for input box focus
+.form-control:focus {
+	border-width: 3px;
+}
+
+//spacing between form elements
+.form-group {
+	margin-bottom: 30px;
+}
+
+//dob sapcing/alignment fixes
+.dob-field-dm {
+  padding-left: 15px;
+  padding-right: 0px;
+}
+
+.dob-field-y {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+//spacing under text blocks
+.content-text{
+	margin-bottom: 30px;
+}
+
+//link formatting
+p{
+	a{
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+//-------------------------------------------------------------------------------------------------------------
+//Lead Paragraph ----------------------------------------------------------------------------------------------
+
+lead-p{
+	font-size: @font-size-lg;
+}
+//REMOVE NOT NEEDED
+
+//-------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------
+
+.lead{
+	p{
+		font-size: @font-size-lg;
+	}
+}
+
+.inc-prog-sh{
+	h5{
+		color: @nhs-grey-1;
+		font-size: @font-size-base;
+	}
+
+	h1{
+		margin-top: 0px;
+	}
+}
+
+//COMBINE?
+
+//-------------------------------------------------------------------------------------------------------------
+//Custom Headers ----------------------------------------------------------------------------------------------
+
+.header-main{
+	//background-color: @brand-primary;
+	width: 100%;
+	height: 70px;
+
+	.header-logo{
+		a{
+			float: left;
+  			height: 70px;
+			padding: 0px 0px;
+			white-space: nowrap;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+//Used for pages when no service name is needed ie a start page
+.header-sub{
+	background-color: @brand-secondary;
+	width: 100%;
+	height: 5px;
+}
+
+//used for pages needing a serive name
+.header-sub-expanded{
+	background-color: @brand-secondary;
+	width: 100%;
+	height: 50px;
+
+	p {
+  	color: @nhs-white;
+  	line-height: 50px;
+    white-space: nowrap;
+		padding-left: 0;
+	}
+}
+
+.header-nhs{
+	background-color: @nhs-light-blue;
+}
+
+.header-other{
+	background-color: @seren-blue;
+}
+
+.header-grey{
+	background-color: @grey-dark;
+}
+
+.header-sub-nhs{
+	background-color: @nhs-lighter-blue;
+}
+
+.header-sub-grey{
+	background-color: @grey-light;
+}
+
+//Footer
+body{
+	background-color: @footer-dark;
+}
+
+section{
+	background-color: @nhs-white;
+	//background-image: url("../img/draft_tile.png")
+}
+
+.footer-sub{
+	background-color: @footer-light;
+	width: 100%;
+	height: 5px;
+}
+
+.footer {
+	background-color: @footer-dark;
+	width: 100%;
+	height: 50px;
+
+	p{
+  	color: @nhs-white;
+  	font-size: @font-size-footer;
+  	//line-height: 50px;
+    //white-space: nowrap;
+    margin-bottom: 0px;
+  }
+
+  a{
+  	color: @nhs-white;
+  }
+
+}
+
+.ws-pad-100{
+	width: 100%;
+	height: 50px;
+}
+
+.ws-pad-300{
+	width: 100%;
+	height: 250px;
+}
+
+.btn-warning-so{
+	padding: 5px 5px;
+	margin-bottom: 0px;
+	margin-top: 3px;
+}
+
+//-------------------------------------------------------------------------------------------------------------
+//Radio Buttons -----------------------------------------------------------------------------------------------
+.block-label {
+  display: block;
+  float: none;
+  clear: left;
+  position: relative;
+  //background: #dee0e2;
+  border: 1px solid transparent;
+  padding: 15px 30px 15px 54px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: @font-size-base;
+  font-weight: @font-weight-base;
+}
+
+@media (min-width: 641px) {
+  .block-label {
+    float: left;
+  }
+}
+
+.block-label input {
+  position: absolute;
+  top: 21px;
+  left: 15px;
+  cursor: pointer;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.block-label-inline {
+	clear: none;
+	margin-right: 15px;
+}
+
+.block-label:hover {
+	border-color: @nhs-black;
+}
+
+.block-label:last-child {
+  margin-bottom: 0;
+}
+
+
+.radio-inline{
+	padding-left: 0px;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"] {
+	margin-left: 0px;
+}
+
+//-------------------------------------------------------------------------------------------------------------
+//Demo Watermark -----------------------------------------------------------------------------------------------
+div.login-pf {
+    background: transparent url("../img/demo_wm.png") no-repeat fixed center 30px;
+    min-height: 360px;
+}
+
+div.login-pf-lg {
+    background: transparent url("../img/demo_wm.png") no-repeat fixed center 80px;
+    min-height: 360px;
+}
+
+//-------------------------------------------------------------------------------------------------------------
+//Custom text -------------------------------------------------------------------------------------------------
+
+.result-large {
+		h1 {
+				font-size: 86px;
+				margin-top: 0;
+		}
+
+  	h2 {
+				font-size: 36px;
+				margin-top: 0;
+		}
+
+}
+
+.result-small {
+	h1 {
+		font-size: 60px;
+		margin-top: 0;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-top: 0;
+	}
+}
+
+.panel-title{
+	font-weight: 400;
+}
+
+//-------------------------------------------------------------------------------------------------------------
+//Style Guide -------------------------------------------------------------------------------------------------
+
+//Grid
+.sg-grid{
+	background-color: @gray-lighter;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+
+//Colour Palette
+//Greys
+.sg-colour-grey-b{
+	background-color: @gray-base;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.sg-colour-grey{
+	background-color: @gray;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.sg-colour-grey-l{
+	background-color: @gray-light;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.sg-colour-grey-ltr{
+	background-color: @gray-lighter;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.sg-colour-grey-d{
+	background-color: @gray-dark;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.sg-colour-grey-dkr{
+	background-color: @gray-darker;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 50px;
+}
+
+
+.sg-colour-primary-nhs{
+	background-color: @nhs-light-blue;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 33.3333px;
+}
+
+.sg-colour-secondary-nhs{
+	background-color: @nhs-lighter-blue;
+	//color: @nhs-black;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 33.3333px;
+}
+
+.sg-colour-primary-other{
+	background-color: @seren-blue;
+	//color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 33.3333px;
+}
+
+.sg-colour-primary-grey{
+	background-color: @grey-dark;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 33.3333px;
+}
+
+.sg-colour-secondary-grey{
+	background-color: @grey-light;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 33.3333px;
+}
+
+.sg-colour-footer{
+	background-color: @grey-light;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 33.3333px;
+}
+
+
+.sg-colour-error{
+	background-color: @state-danger-text;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 33.3333px;
+}
+
+.sg-colour-btn-default{
+	background-color: @btn-default-bg;
+	color: @nhs-white;
+	font-size: @font-size-footer;
+	height: 100px;
+	text-align: center;
+	line-height: 33.3333px;
+}
+
+//stickiness disabled so that it can be displayed properly on the style guide
+.footer-sg {
+	//position: absolute;
+	//bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: @brand-primary;
+	//margin-top: -50px;
+
+  p{
+  	color: @nhs-white;
+  	font-size: @font-size-footer;
+  	line-height: 50px;
+    white-space: nowrap;
+    //padding-top: 0px;
+    //padding-bottom: 0px;
+    //margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

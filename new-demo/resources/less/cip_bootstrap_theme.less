@@ -1,0 +1,114 @@
+// Boostrap Custom Theme Variables
+//mostly bootstrap, some custom
+// ------------------------------------------------------------------------------------------------------------------------
+// Colours ----------------------------------------------------------------------------------------------------------------
+// Main ------
+@brand-primary: @nhs-light-blue;
+@brand-secondary: darken(@nhs-light-blue, 20%); //cstm colour - non bootstrap default
+//                  #64c8ff
+@state-danger-text : @nhs-red;
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------
+// Scaffolding ------------------------------------------------------------------------------------------------------------
+@body-bg: @nhs-white; //Background color for <body>
+@text-color: @nhs-black; //Global text color on <body>
+@link-color: @brand-primary; //Global textual link color
+@link-hover-color: darken(@link-color, 15%); //Link hover color set via darken() function
+@link-hover-decoration: underline; //Link hover decoration
+
+// ------------------------------------------------------------------------------------------------------------------------
+// Grid -------------------------------------------------------------------------------------------------------------------
+@grid-columns: 12; //Number of columns in the grid
+@grid-gutter-width: 30px; //Padding between columns. Gets divided in half for the left and right
+
+// ------------------------------------------------------------------------------------------------------------------------
+// Padding ----------------------------------------------------------------------------------------------------------------
+@padding-base-vertical: 5px;
+@padding-base-horizontal: 5px;
+@padding-large-vertical: 15px;
+@padding-large-horizontal: 15px;
+@padding-small-vertical: 10px;
+@padding-small-horizontal: 10px;
+@padding-xs-vertical: 5px;
+@padding-xs-horizontal: 5px;
+@line-height-large: 1.5;
+@line-height-small: 1.5;
+@border-radius-base: 0px; // no rounding
+@border-radius-large: 0px;
+@border-radius-small: 0px;
+
+// ------------------------------------------------------------------------------------------------------------------------
+// Typography -------------------------------------------------------------------------------------------------------------
+
+@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace; //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-base: 'Roboto', sans-serif;
+
+@font-size-base: 19px;
+@font-size-lg: 24px; //cstm size for lead paragraphs, labels etc
+@font-size-footer: 14px; //cstm size for footer
+
+@font-size-h1: 48px;
+@font-size-h2: 36px;
+@font-size-h3: 24px;
+@font-size-h4: 19px;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base: 1.5;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed: floor((@font-size-base * @line-height-base)); // ~20px
+
+@font-weight-base: 400;
+@font-weight-bold: 700;
+
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family: 'Roboto', sans-serif;
+@headings-font-weight: @font-weight-base;
+@headings-line-height: 1.1;
+@headings-color: inherit;
+
+// ------------------------------------------------------------------------------------------------------------------------
+// Buttons ----------------------------------------------------------------------------------------------------------------
+@btn-font-weight: normal;
+@btn-default-color: @nhs-white;
+@btn-default-bg: @nhs-dark-green;
+@btn-default-border: #003300;
+
+@btn-warning-bg: @btn-orange;
+@btn-warning-border: @nhs-black;
+
+// ------------------------------------------------------------------------------------------------------------------------
+// Forms ------------------------------------------------------------------------------------------------------------------
+@input-bg: @nhs-white;
+@input-bg-disabled: @gray-lighter;
+
+@input-color: @nhs-black;
+
+@input-border: @nhs-black;
+@input-border-radius: @border-radius-base;
+@input-border-radius-large: @border-radius-large;
+@input-border-radius-small: @border-radius-small;
+@input-border-focus: @nhs-light-blue;
+
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 12); // ~50px
+
+//== Panels
+//
+//##
+
+@panel-bg:                    #fff;
+@panel-body-padding:          15px;
+@panel-heading-padding:       10px 15px;
+@panel-footer-padding:        @panel-heading-padding;
+@panel-border-radius:         @border-radius-base;
+
+//** Border color for elements within panels
+@panel-inner-border:          #ddd;
+@panel-footer-bg:             #f5f5f5;
+@panel-info-text:             @nhs-white;
+@panel-info-border:           @brand-secondary;
+@panel-info-heading-bg:       @brand-secondary;
