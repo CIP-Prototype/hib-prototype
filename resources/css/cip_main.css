@@ -6935,6 +6935,14 @@ div.login-pf-lg {
   border-left-width: 5px;
   border-radius: 3px;
 }
+.bs-callout h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-callout h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 .bs-callout h4 {
   margin-top: 0;
   margin-bottom: 5px;
