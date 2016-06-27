@@ -4,8 +4,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import "font-awesome.min.css";
-@import "google-roboto.css";
+@import url("http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -51,11 +51,6 @@ a:active,
 a:hover {
   outline: 0;
 }
-/*---- addition of focus colours (steve)
-a:focus {
-    background-color: #FFED00;
-    outline: 3px solid #FFED00;
-}---*/
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -188,14 +183,6 @@ td,
 th {
   padding: 0;
 }
-
-/*--------- Steve's additions 24-06-2016 ------------*/
-
-/*-------------- logo -----------*/
-
-
-/*-------------- logo -----------*/
-
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
@@ -1086,7 +1073,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Frutiger, Helvetica, sans-serif;
   font-size: 19px;
   line-height: 1.5;
   color: #231f20;
@@ -1188,7 +1175,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: Frutiger, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.1;
   color: inherit;
@@ -5725,22 +5712,22 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #d6e9c6;
 }
 .panel-info {
-  border-color: #004064;
+  border-color: #bce8f1;
 }
 .panel-info > .panel-heading {
-  color: #ffffff;
-  background-color: #004064;
-  border-color: #004064;
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #004064;
+  border-top-color: #bce8f1;
 }
 .panel-info > .panel-heading .badge {
-  color: #004064;
-  background-color: #ffffff;
+  color: #d9edf7;
+  background-color: #31708f;
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #004064;
+  border-bottom-color: #bce8f1;
 }
 .panel-warning {
   border-color: #faebcc;
@@ -5978,7 +5965,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: Frutiger, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6096,7 +6083,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Frutiger, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6795,16 +6782,6 @@ lead-p {
   width: 100%;
   height: 70px;
 }
-/*---- alt NHS logo in a white box (Steve) -----
-.header-main .header-logo a {
-  float: left;
-  height: 36px;
-    width:90px;
-  padding: 0px 0px;
-  white-space: nowrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}*/
 .header-main .header-logo a {
   float: left;
   height: 70px;
@@ -6814,12 +6791,10 @@ lead-p {
   padding-bottom: 20px;
 }
 .header-sub {
-  background-color:#e5f0f9;
   width: 100%;
   height: 5px;
 }
 .header-sub-expanded {
-  background-color: #004064;
   width: 100%;
   height: 50px;
 }
@@ -6827,7 +6802,6 @@ lead-p {
   color: #ffffff;
   line-height: 50px;
   white-space: nowrap;
-  padding-left: 0;
 }
 .header-nhs {
   background-color: #0082CA;
@@ -6863,10 +6837,9 @@ section {
 .footer p {
   color: #ffffff;
   font-size: 14px;
+  line-height: 50px;
+  white-space: nowrap;
   margin-bottom: 0px;
-}
-.footer a {
-  color: #ffffff;
 }
 .ws-pad-100 {
   width: 100%;
@@ -6878,9 +6851,41 @@ section {
 }
 .btn-warning-so {
   padding: 5px 5px;
+  float: right;
   margin-bottom: 0px;
   margin-top: 3px;
 }
+/*
+//Sticks the  footer to the bottom of the screen when content height is < browser window height
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 100px; //footer height (currently 2x the footer to give some whitespace between the end of the content and footer )
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: @brand-primary;
+	margin-top: -50px;
+  
+  p{
+  	color: @nhs-white;
+  	font-size: @font-size-footer;
+  	line-height: 50px;
+    white-space: nowrap;
+    //padding-top: 0px;
+    //padding-bottom: 0px;
+    //margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+*/
 .block-label {
   display: block;
   float: none;
@@ -6923,96 +6928,6 @@ section {
 .radio input[type="radio"],
 .radio-inline input[type="radio"] {
   margin-left: 0px;
-}
-div.login-pf {
-  background: transparent url("../img/demo_wm.png") no-repeat fixed center 30px;
-  min-height: 360px;
-}
-div.login-pf-lg {
-  background: transparent url("../img/demo_wm.png") no-repeat fixed center 80px;
-  min-height: 360px;
-}
-.result-large h1 {
-  font-size: 86px;
-  margin-top: 0;
-}
-.result-large h2 {
-  font-size: 36px;
-  margin-top: 0;
-}
-.result-small h1 {
-  font-size: 60px;
-  margin-top: 0;
-}
-.result-small h2 {
-  font-size: 24px;
-  margin-top: 0;
-}
-.panel-title {
-  font-weight: 400;
-}
-.bs-callout {
-  padding: 20px;
-  margin: 20px 0;
-  border: 1px solid #eee;
-  border-left-width: 5px;
-  border-radius: 3px;
-}
-.bs-callout h4 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.bs-callout code {
-  border-radius: 3px;
-}
-.bs-callout p:last-child {
-  margin-bottom: 0;
-}
-.bs-callout + .bs-callout {
-  margin-top: -5px;
-}
-.bs-callout-default {
-  border-left-color: #777777;
-}
-.bs-callout-default h4 {
-  color: #777777;
-}
-.bs-callout-primary {
-  border-left-color: #0082CA;
-}
-.bs-callout-primary h4 {
-  color: #0082CA;
-}
-.bs-callout-success {
-  border-left-color: #00953A;
-  background-color: #b2e599;
-}
-.bs-callout-success h1 {
-  color: #00953A;
-}
-.bs-callout-success h2 {
-  color: #00953A;
-}
-.bs-callout-success h4 {
-  color: #00953A;
-}
-.bs-callout-danger {
-  border-left-color: #d9534f;
-}
-.bs-callout-danger h4 {
-  color: #d9534f;
-}
-.bs-callout-warning {
-  border-left-color: #f0ad4e;
-}
-.bs-callout-warning h4 {
-  color: #f0ad4e;
-}
-.bs-callout-info {
-  border-left-color: #5bc0de;
-}
-.bs-callout-info h4 {
-  color: #5bc0de;
 }
 .sg-grid {
   background-color: #eeeeee;

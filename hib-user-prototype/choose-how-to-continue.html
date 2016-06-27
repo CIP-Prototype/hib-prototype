@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NHS.UK</title>
+
+    <link href="css/nhsAlpha/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link href="css/nhsAlpha/nhs_application.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Javascript -->
+    <script src="js/nhsAlpha/jquery-1.11.2.min.js"></script>
+    <script src="js/nhsAlpha/jquery-ui.min.js"></script>
+    <script src="js/nhsAlpha/jquery.select-to-autocomplete.js"></script>
+    <script src="js/nhsAlpha/jquery.sticky-kit.min.js"></script>
+    <script src="js/nhsAlpha/jquery.easing.1.3.js"></script>
+    <script src="js/nhsAlpha/jquery.transit.js"></script>
+    <script src="js/nhsAlpha/toggle.js"></script>
+    <script src="js/nhsAlpha/details.polyfill.js"></script>
+    <script src="js/nhsAlpha/cards.js"></script>
+    <script src="js/nhsAlpha/application.js"></script>
+
+    <!-- Smoke & Mirrors -->
+    <script type="text/javascript" src="js/appointment_start.js"></script>
+
+    <script> $(function() { $(".sticky").stick_in_parent(); }); </script>
+  </head>
+
+  <body class="">
+    <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <header role="banner" id="global-header">
+      <div class="header-container">
+        <a href="" class="header-logo" title="Go to the NHS.UK homepage"><img src="img/nhs_trans.png" alt=""></a>
+      </div>
+    </header>
+    <!--end header-->
+
+
+    <main id="content" role="main">
+      <h1 class="heading-xlarge">Do you have an NHS login?</h1>
+ <!--     <div class="text">
+          <h1 class="heading-small">If you already have an account you can continue by logging in below:</h1>
+            <p><a href="pol-login.html" class="button button-get-started" id="signIn">Log in &nbsp; <i class="fa fa-chevron-right"></i></a></p>
+          <h1 class="heading-small">If you don't have an account you can create one using the following link:</h1>
+            <p><a class="button button-get-started" id="signIn">Create an ID &nbsp; <i class="fa fa-chevron-right"></i></a></p>
+          <p>It is possible to book an appointment without creating an account. If you would prefer to do this please use the following link:</p>
+          <p id="without-link"><a href="#"><i class="fa fa-chevron-right"></i>Continue without an account</a></p>
+      </div>-->
+    
+	 <form action="choose-registration-method-handler" method="get" class="form text">
+    <fieldset>
+      <!--<legend class="form-label-bold">Do you have an NHS login?</legend>-->
+
+      
+  <div class="form-item-wrapper">
+    <div class="form-group">
+      <input type="radio" id="sign-in-to-register" name="registration_method" value="with-signin">
+      <label class="form-control-radio" for="sign-in-to-register">
+        <strong>Yes,</strong> I will sign in to continue
+      </label>
+    </div>
+  </div>
+
+
+      
+  <div class="form-item-wrapper">
+    <div class="form-group">
+      <input type="radio" id="create-a-login" name="registration_method" value="without-signin">
+      <label class="form-control-radio" for="create-a-login">
+        <strong>No I do not,</strong> I will create one
+      </label>
+    </div>
+  </div>
+  
+  
+    <div class="form-item-wrapper">
+    <div class="form-group">
+      <input type="radio" id="register-without-signing-in" name="registration_method" value="without-signin">
+      <label class="form-control-radio" for="register-without-signing-in">
+        <strong>No I do not,</strong> I will continue without signing in
+      </label>
+    </div>
+  </div>
+
+
+</fieldset>
+
+    
+	<div class="form-item-wrapper">
+		<div class="form-group">
+		  
+			<button type="submit" class="button ">Next</button>
+		  
+		</div>
+	</div>
+
+</form>
+  
+<div class="help-nav">
+	<a href="#">Help</a> | <a href="#">Privacy</a> | <a href="#">Terms &amp; Conditions</a>	
+</div>
+	
+	
+</main>
+
+    <footer id="footer" role="contentinfo">
+      <div class="footer-wrapper">
+		<div class="text">
+			<p><small>&copy; Crown copyright
+			<br>Content available under <a href="">Open Government Licence v3.0</a>, except where otherwise stated.</small></p>
+		</div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+  </body>
+</html>
