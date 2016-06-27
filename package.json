@@ -2,10 +2,13 @@
   "name": "node_proto",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "npm": "3.8.0"
+  },
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "server.js"
   },
   "author": "",
   "license": "ISC",
