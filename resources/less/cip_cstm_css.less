@@ -59,7 +59,7 @@ label{
 p{
 	a{
 		cursor: pointer;
-		text-decoration: underline;
+		//text-decoration: underline;
 	}
 }
 //-------------------------------------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ lead-p{
 
 .inc-prog-sh{
 	h5{
-		color: @nhs-grey-1;
+		color: @nhs-mild-grey;
 		font-size: @font-size-base;
 	}
 
@@ -134,7 +134,7 @@ lead-p{
 }
 
 .header-nhs{
-	background-color: @nhs-light-blue;
+	background-color: @brand-primary;
 }
 
 .header-other{
@@ -146,7 +146,7 @@ lead-p{
 }
 
 .header-sub-nhs{
-	background-color: @nhs-lighter-blue;
+	background-color: @brand-secondary;
 }
 
 .header-sub-grey{
@@ -184,6 +184,7 @@ section{
 
   a{
   	color: @nhs-white;
+		text-decoration: underline;
   }
 
 }
@@ -257,6 +258,15 @@ section{
 .radio input[type="radio"], .radio-inline input[type="radio"] {
 	margin-left: 0px;
 }
+
+//-------------------------------------------------------------------------------------------------------------
+//Input Boxes -------------------------------------------------------------------------------------------------
+.icon-input-btn{
+	height: 50px;
+	width: 50px;
+}
+
+
 
 //-------------------------------------------------------------------------------------------------------------
 //Demo Watermark -----------------------------------------------------------------------------------------------
@@ -341,10 +351,19 @@ div.login-pf-lg {
 }
 
 .bs-callout-default {
-	border-left-color: @gray-light;
+	border-left-color: @nhs-dark-grey;
+	background-color: @nhs-light-grey;
+
+	h1 {
+		color: @nhs-black;
+	}
+
+	h2 {
+		color: @nhs-black;
+	}
 
 	h4 {
-		color: @gray-light;
+		color: @nhs-black;
 	}
 }
 .bs-callout-primary {
@@ -381,10 +400,19 @@ div.login-pf-lg {
 }
 
 .bs-callout-warning {
-	border-left-color:@brand-warning;
+	border-left-color: @nhs-warm-yellow;
+	background-color: @nhs-light-yellow;
+
+	h1 {
+		color: @nhs-black;
+	}
+
+	h2 {
+		color: @nhs-black;
+	}
 
 	h4 {
-	  color: @brand-warning;
+		color: @nhs-black;
 	}
 }
 
@@ -393,6 +421,27 @@ div.login-pf-lg {
 
 	h4 {
 	  color: @brand-info;
+	}
+}
+
+//Callout Checkbox Overides
+.callout-cb{
+	padding: 0px;
+
+	.radio-inline{
+		.block-label{
+			border: 0px;
+
+		}
+	}
+}
+
+//-------------------------------------------------------------------------------------------------------------
+//Tables -------------------------------------------------------------------------------------------------
+
+.opening-times-table {
+	td {
+		padding: 10px 25px;
 	}
 }
 
@@ -473,7 +522,7 @@ div.login-pf-lg {
 }
 
 .sg-colour-secondary-nhs{
-	background-color: @nhs-lighter-blue;
+	background-color: @brand-secondary;
 	//color: @nhs-black;
 	font-size: @font-size-footer;
 	height: 100px;
