@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link href="css/nhsAlpha/nhs_application.css" media="screen" rel="stylesheet" type="text/css">
-
+      <link href="css/nhsAlpha/steve-overridess.css" media="screen" rel="stylesheet" type="text/css">
     <!-- Javascript -->
     <script src="js/nhsAlpha/jquery-1.11.2.min.js"></script>
     <script src="js/nhsAlpha/jquery-ui.min.js"></script>
@@ -41,16 +41,28 @@
 
     <header role="banner" id="global-header">
       <div class="header-container">
-        <a href="" class="header-logo" title="Go to the NHS.UK homepage"><img src="img/nhs_trans.png" alt=""></a>
+        <a href="index.html" class="header-logo" title="Go to the NHS.UK homepage"><img src="img/nhs_trans.png" alt=""></a>
       </div>
     </header>
     <!--end header-->
 
 
     <main id="content" role="main">
-      <h1 class="heading-xlarge">Sign in</h1>
-        <p>To sign in to this service, you can use your Patient Online ID<p>
-        <form>
+        <h1 class="heading-xlarge">Sign in with</h1>
+  
+        <div class="graphic-text"><p>Your GOV.UK Verify ID <p></div>
+       <div class="row-height">
+		<div class="graphic"><img src="img/verify.jpg" height="90" alt=""></div>
+           </div>
+        <p><a class="button button-get-started verify" href="Start-Verify-GOV-UK-signin.html">GOV.UK VERIFY <i class="fa fa-chevron-right"></i></a></p>
+        <br>
+         <h1 class="heading-large splitter"><span>OR</span></h1>
+      <br><br>
+        <p>Your GP practice login details<p>
+        <div class="graphic-nhs"><img src="img/nhs_trans.png" height="50" alt=""></div>
+        <p><a class="button button-get-started verify" href="signin-gp-details-B.html">GP practice login <i class="fa fa-chevron-right"></i></a></p>
+        <br>
+        <!--<form>
             <div class="row>">
                 <label class="form-label-bold">Username</label>
                 <input class="form-control" type="text">
@@ -66,10 +78,8 @@
             <div class="help">
                 <p><a href="#">Forgotten your NHS login?</a></p>
             </div>
-        </form>
-        <h1 class="heading-large splitter"><span>OR</span></h1>
-		<p>Use your GOV.UK Verify ID<p>
-        <p><a class="button button-get-started verify" href="Start-Verify-GOV-UK.htm">GOV.UK VERIFY <i class="fa fa-chevron-right"></i></a></p>
+        </form>-->
+        
 		
 		
 		<div class="help-nav">

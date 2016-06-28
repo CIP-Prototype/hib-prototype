@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NHS.UK</title>
+
+    <link href="css/nhsAlpha/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link href="css/nhsAlpha/nhs_application.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Javascript -->
+    <script src="js/nhsAlpha/jquery-1.11.2.min.js"></script>
+    <script src="js/nhsAlpha/jquery-ui.min.js"></script>
+    <script src="js/nhsAlpha/jquery.select-to-autocomplete.js"></script>
+    <script src="js/nhsAlpha/jquery.sticky-kit.min.js"></script>
+    <script src="js/nhsAlpha/jquery.easing.1.3.js"></script>
+    <script src="js/nhsAlpha/jquery.transit.js"></script>
+    <script src="js/nhsAlpha/toggle.js"></script>
+    <script src="js/nhsAlpha/details.polyfill.js"></script>
+    <script src="js/nhsAlpha/cards.js"></script>
+    <script src="js/nhsAlpha/application.js"></script>
+
+    <!-- Smoke & Mirrors -->
+    <script type="text/javascript" src="js/appointment_start.js"></script>
+
+    <script> $(function() { $(".sticky").stick_in_parent(); }); </script>
+  </head>
+
+  <body class="">
+    <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <header role="banner" id="global-header">
+      <div class="header-container">
+        <a href="index.html" class="header-logo" title="Go to the NHS.UK homepage"><img src="img/nhs_trans.png" alt=""></a>
+      </div>
+    </header>
+    <!--end header-->
+
+
+    <main id="content" role="main">
+      <h1 class="heading-xlarge">Sign in</h1>
+        <p>To sign in to this service, you can use your Patient Online ID<p>
+        <form>
+            <div class="row>">
+                <label class="form-label-bold">Username</label>
+                <input class="form-control" type="text">
+            </div>
+            <div class="row">
+                <label class="form-label-bold">Password</label>
+                <input class="form-control" type="password">
+            </div>
+            <br>
+            <div>
+                <p><a class="button button-get-started">Sign In <i class="fa fa-chevron-right"></i></a></p>
+            </div>
+            <div class="help">
+                <p><a href="#">Forgotten your NHS login?</a></p>
+            </div>
+        </form>
+        <!--<h1 class="heading-large splitter"><span>OR</span></h1>
+		<p>Use your GOV.UK Verify ID<p>
+        <p><a class="button button-get-started verify" href="Start-Verify-GOV-UK.htm">GOV.UK VERIFY <i class="fa fa-chevron-right"></i></a></p>-->
+		
+		
+		<div class="help-nav">
+			<a href="#">Help</a> | <a href="#">Privacy</a> | <a href="#">Terms &amp; Conditions</a>	
+		</div>
+	
+        
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      <div class="footer-wrapper">
+		<div class="text">
+			<p><small>&copy; Crown copyright
+			<br>Content available under <a href="">Open Government Licence v3.0</a>, except where otherwise stated.</small></p>
+		</div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+  </body>
+</html>
