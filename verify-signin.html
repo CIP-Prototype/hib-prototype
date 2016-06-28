@@ -11,11 +11,12 @@
 
 	<script type="text/javascript" src="resources/js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="resources/js/diabetes-demo.js"></script>
 	</head>
 
 	<body class="">
-
-		<section class="section" id="header">
+    <!--Blue Header -->
+		<section class="section" id="header"> <!--css class header-main for the blue heading bar -->
 			<div class="container header-main header-nhs">
 				<div class="row">
 					<div class= "container-fluid header-logo col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
@@ -27,43 +28,25 @@
 			</div>
     </section>
 
+    <!-- L Blue Sub-Header -->
     <section class="section" id="sub-header">
 			<div class="container header-sub">
         <div class="row"></div>
       </div>
     </section>
 
+    <!-- Main Body -->
 		<section class="section" id="content">
     	<div class="login-pf-lg standardText">
         <div class="container container-wrapper">
           <div class="row">
-
+          	<!-- ccs class content-wrapper is only needed when a button immediately proceeds it (fixes some spacing weirdness) -->
             <div class="container-fluid content-text col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
               <div class="row">
-								<div class="clearfix">
-	                <div class="lead">
-	                  <h1>Sign in with</h1>
-	                </div>
-								<div class="clearfix">
-									<h2>Patient Online</h2>
-									<p>Sign in here with using your GP Practice login details</p>
-								</div>
-								<div class="clearfix">
-									<a class="btn btn-default col-xs-12 col-sm-12 col-md-4 col-lg-3" id="pOnlineBtn" href="patient-online-signin.html">
-										Patient Online &nbsp; <i class="fa fa-chevron-right"></i>
-									</a>
-								</div>
-								<hr/>
-								<div class="clearfix">
-									<h2>GOV.UK Verify</h2>
-									<p>Sign in here using your GOV.UK Verify login details</p>
-								</div>
-								<div class="clearfix">
-									<a class="btn btn-default col-xs-12 col-sm-12 col-md-4 col-lg-3" id="verifyBtn" href="verify-signin.html">
-										GOV.UK Verify &nbsp; <i class="fa fa-chevron-right"></i>
-									</a>
-								</div>
-								<br/>
+                <!--Main heaing, sub heading and lead paragraph, if using the progress sub-header css class inc-prog-sh is needed -->
+                <div class="lead">
+                  <h1>Verify Sign in</h1>
+                </div>
               </div>
             </div>
           </div>
@@ -71,6 +54,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <section class="section" id="sub-footer">
 		  <div class="container footer-sub">
 		    <div class="row"></div>
