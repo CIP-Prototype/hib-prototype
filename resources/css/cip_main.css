@@ -6935,8 +6935,10 @@ div.login-pf-lg {
 .bs-callout {
   padding: 20px;
   margin: 20px 0;
-  border: 1px solid #eee;
-  border-left-width: 5px;
+  border: 1px solid #ffffff;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  border-left-width: 10px;
   border-radius: 3px;
 }
 .bs-callout h1 {
@@ -6961,27 +6963,31 @@ div.login-pf-lg {
   margin-top: -5px;
 }
 .bs-callout-default {
-  border-left-color: #415564;
-  background-color: #d9e1e2;
+  border-left-color: #758693;
 }
 .bs-callout-default h1 {
-  color: #000000;
+  color: #758693;
 }
 .bs-callout-default h2 {
-  color: #000000;
+  color: #758693;
 }
 .bs-callout-default h4 {
-  color: #000000;
+  color: #758693;
 }
 .bs-callout-primary {
   border-left-color: #0070c9;
+}
+.bs-callout-primary h1 {
+  color: #0070c9;
+}
+.bs-callout-primary h2 {
+  color: #0070c9;
 }
 .bs-callout-primary h4 {
   color: #0070c9;
 }
 .bs-callout-success {
   border-left-color: #009f45;
-  background-color: #b2e599;
 }
 .bs-callout-success h1 {
   color: #009f45;
@@ -7000,16 +7006,15 @@ div.login-pf-lg {
 }
 .bs-callout-warning {
   border-left-color: #ffb900;
-  background-color: #ffe894;
 }
 .bs-callout-warning h1 {
-  color: #000000;
+  color: #ffb900;
 }
 .bs-callout-warning h2 {
-  color: #000000;
+  color: #ffb900;
 }
 .bs-callout-warning h4 {
-  color: #000000;
+  color: #ffb900;
 }
 .bs-callout-info {
   border-left-color: #5bc0de;
@@ -7025,6 +7030,24 @@ div.login-pf-lg {
 }
 .opening-times-table td {
   padding: 10px 25px;
+}
+.header-gds {
+  background-color: #0070c9;
+  width: 100%;
+  height: 70px;
+}
+.header-gds .header-logo a {
+  float: left;
+  height: 70px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header-sub {
+  background-color: #e5f0f9;
+  width: 100%;
+  height: 5px;
 }
 .sg-grid {
   background-color: #eeeeee;

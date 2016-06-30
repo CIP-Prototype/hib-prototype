@@ -318,8 +318,10 @@ div.login-pf-lg {
 .bs-callout {
   padding: 20px;
   margin: 20px 0;
-  border: 1px solid #eee;
-  border-left-width: 5px;
+  border: 1px solid #ffffff;
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+  border-left-width: 10px;
   border-radius: 3px;
 
 	h1 {
@@ -351,23 +353,30 @@ div.login-pf-lg {
 }
 
 .bs-callout-default {
-	border-left-color: @nhs-dark-grey;
-	background-color: @nhs-light-grey;
+	border-left-color: @nhs-mild-grey;
 
 	h1 {
-		color: @nhs-black;
+		color: @nhs-mild-grey;
 	}
 
 	h2 {
-		color: @nhs-black;
+		color: @nhs-mild-grey;
 	}
 
 	h4 {
-		color: @nhs-black;
+		color: @nhs-mild-grey;
 	}
 }
 .bs-callout-primary {
   border-left-color:@brand-primary;
+
+	h1 {
+		color: @brand-primary;
+	}
+
+	h2 {
+		color: @brand-primary;
+	}
 
 	h4 {
 		color: @brand-primary;
@@ -376,7 +385,6 @@ div.login-pf-lg {
 
 .bs-callout-success {
   border-left-color: @nhs-green;
-	background-color: @nhs-lighter-green;
 
 	h1 {
 		color: @nhs-green;
@@ -401,18 +409,17 @@ div.login-pf-lg {
 
 .bs-callout-warning {
 	border-left-color: @nhs-warm-yellow;
-	background-color: @nhs-light-yellow;
 
 	h1 {
-		color: @nhs-black;
+		color: @nhs-warm-yellow;
 	}
 
 	h2 {
-		color: @nhs-black;
+		color: @nhs-warm-yellow;
 	}
 
 	h4 {
-		color: @nhs-black;
+		color:@nhs-warm-yellow;
 	}
 }
 
@@ -444,6 +451,33 @@ div.login-pf-lg {
 		padding: 10px 25px;
 	}
 }
+
+//-------------------------------------------------------------------------------------------------------------
+//GDS styles -------------------------------------------------------------------------------------------------
+.header-gds{
+	background-color: @brand-primary;
+	width: 100%;
+	height: 70px;
+
+	.header-logo{
+		a{
+			float: left;
+  			height: 70px;
+			padding: 0px 0px;
+			white-space: nowrap;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+//Used for pages when no service name is needed ie a start page
+.header-sub{
+	background-color: @brand-secondary;
+	width: 100%;
+	height: 5px;
+}
+
 
 //-------------------------------------------------------------------------------------------------------------
 //Style Guide -------------------------------------------------------------------------------------------------
