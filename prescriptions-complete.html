@@ -4,7 +4,7 @@
 	<head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>NHS.UK *Page Title*</title>
+	<title>NHS.UK Repeat Prescriptions</title>
 
 	<link rel="icon" href="resources/img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="resources/css/cip_main.css" media="screen" type="text/css" />
@@ -44,9 +44,133 @@
             <div class="container-fluid content-text col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
               <div class="row">
                 <!--Main heaing, sub heading and lead paragraph, if using the progress sub-header css class inc-prog-sh is needed -->
-                <div class="lead">
-                  <h1>Prescriptions</h1>
-                </div>
+								<div class="clearfix">
+									<div class="lead">
+										<h1>Reorder My Repeat Precription</h1>
+									</div>
+									<div class="clearfix">
+										<h3>Click and Collect your Prescription from your nominated Pharmacy</h3>			
+									</div>
+									<hr>
+								</div>
+								<div class="clearfix">
+									<h2>Maurice Hutter</h2>
+								</div>
+								<br/>
+								<div class="row">
+									<div class="col-lg-6">
+										<strong>
+											Home address
+										</strong>
+										<p>12 Devonshire Avenue<br/>
+										Leeds<br/>
+										West Yorkshire<br/>
+										LS8 1AY
+										</p>
+									</div>
+									<div class="col-lg-6">
+										<strong>Date of birth/NHS No.</strong>
+										<p>23rd March 1970</p>
+										<strong>NHS Number</strong>
+										<p>987654321</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<strong>Email</strong>
+										<p>mauricehutter@email.com</p>
+									</div>
+								</div>
+								<hr>
+								<div class="clearfix">
+									<h2>Payment Exemption Form</h2>
+									<br/>
+									<p>If you don't pay for your prescriptions, click here to fill out a prescription exemption form:</p>
+									<br/>
+									<div class="clearfix">
+										<a class="btn btn-default col-xs-12 col-sm-12 col-md-5 col-lg-4" id="prescExempt" data-toggle="modal" data-target="#myModal">
+											Exemption Form &nbsp; <i class="fa fa-chevron-right"></i>
+										</a>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-lg-12">
+										<h2>Nominated Pharmacy</h2>
+										<div>
+											<strong>Home address</strong>
+											<p>
+												12 Devonshire Avenue<br/>
+												Leeds<br/>					
+												West Yorkshire<br/>
+												LS8 1AY
+											</p>
+										</div>
+										<div class="clearfix">
+											<a class="btn btn-default col-xs-12 col-sm-12 col-md-5 col-lg-4" id="otherPharms" data-toggle="modal" data-target="#myModal">
+												Other Pharmacies &nbsp; <i class="fa fa-chevron-right"></i>
+											</a>
+										</div>
+									</div>	
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-lg-12">
+										<h2>Current Prescription</h2>
+										<div class="clearfix">
+											<div class="radio-inline">
+												<label class="block-label block-label-inline">
+													<input type="radio" name="currentPresc" id="ibuprofen" value="ibuprofen">
+													<strong>Ibuprofen tablets (200mg)</strong><br/>
+													Take one daily until course finishes	
+												</label>
+											</div>
+										</div>
+										
+										<div class="clearfix">
+											<div class="radio-inline">
+												<label class="block-label block-label-inline">
+													<input type="radio" name="currentPresc" id="patanol" value="patanol">
+													<strong>Patanol Olopatadine hydrochloride ophthalmic solution 0.1%</strong><br/>
+													Use eye drops every 8 hours (eyes only) 15ml
+												</label>
+											</div>
+										</div>
+										
+										<div class="clearfix">
+											<div class="radio-inline">
+												<label class="block-label block-label-inline">
+													<input type="radio" name="currentPresc" id="paracetamol" value="paracetamol">
+													<strong>Paracetamol 500mg</strong>
+												</label>
+											</div>
+										</div>
+										
+										<br/>
+										<div class="clearfix">
+											<a class="btn btn-default col-xs-12 col-sm-12 col-md-5 col-lg-4" id="reorderPresc" data-toggle="modal" data-target="#myModal">
+												Reorder Prescription &nbsp; <i class="fa fa-chevron-right"></i>
+											</a>
+										</div>
+										<!-- Modal -->
+										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														<h4 class="modal-title" id="myModalLabel">Demo Endpoint</h4>
+													</div>
+													<div class="modal-body">
+														This button is disabled in the demo. Click close to continue.
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>								
+									</div>	
+								</div>
               </div>
             </div>
           </div>
