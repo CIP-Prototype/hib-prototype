@@ -6800,7 +6800,7 @@ lead-p {
   height: 50px;
 }
 .header-sub-expanded p {
-  color: #ffffff;
+  color: #000000;
   line-height: 50px;
   white-space: nowrap;
   padding-left: 0;
@@ -6932,6 +6932,15 @@ div.login-pf-lg {
 .panel-title {
   font-weight: 400;
 }
+.icon-text {
+  position: relative;
+}
+.icon-text div {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: 45px;
+}
 .bs-callout {
   padding: 20px;
   margin: 20px 0;
@@ -6946,6 +6955,10 @@ div.login-pf-lg {
   margin-bottom: 5px;
 }
 .bs-callout h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-callout h3 {
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -6969,6 +6982,9 @@ div.login-pf-lg {
   color: #758693;
 }
 .bs-callout-default h2 {
+  color: #758693;
+}
+.bs-callout-default h3 {
   color: #758693;
 }
 .bs-callout-default h4 {
@@ -7032,22 +7048,56 @@ div.login-pf-lg {
   padding: 10px 25px;
 }
 .header-gds {
-  background-color: #0070c9;
+  background-color: #0b0c0c;
   width: 100%;
-  height: 70px;
+  height: 53px;
 }
 .header-gds .header-logo a {
   float: left;
-  height: 70px;
+  height: 53px;
   padding: 0px 0px;
   white-space: nowrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
-.header-sub {
-  background-color: #e5f0f9;
+.header-gds .header-logo p {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 45px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.header-gds-sub {
+  background-color: #005ea5;
   width: 100%;
-  height: 5px;
+  height: 10px;
+}
+.gds-language p {
+  padding-top: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.gds-language hr {
+  margin: 0px;
+  border-top: 1px solid #bfc1c3;
+}
+.gds-coloured-container {
+  background-color: #005ea5;
+  color: #fff;
+  padding: 75px 20px;
+}
+.gds-coloured-container h2 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+.gds-coloured-container .block-label {
+  font-size: 24px;
+}
+.gds-coloured-container .block-label input {
+  width: 25px;
+  height: 25px;
 }
 .sg-grid {
   background-color: #eeeeee;
