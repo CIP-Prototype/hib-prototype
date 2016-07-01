@@ -3024,7 +3024,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 .btn:active,
@@ -3048,26 +3048,26 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #ffffff;
-  background-color: #006647;
+  color: #000000;
+  background-color: #ffffff;
   border-color: #003300;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #ffffff;
-  background-color: #003324;
+  color: #000000;
+  background-color: #e6e6e6;
   border-color: #000000;
 }
 .btn-default:hover {
-  color: #ffffff;
-  background-color: #003324;
+  color: #000000;
+  background-color: #e6e6e6;
   border-color: #000000;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #ffffff;
-  background-color: #003324;
+  color: #000000;
+  background-color: #e6e6e6;
   border-color: #000000;
 }
 .btn-default:active:hover,
@@ -3079,8 +3079,8 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #ffffff;
-  background-color: #000f0b;
+  color: #000000;
+  background-color: #d4d4d4;
   border-color: #000000;
 }
 .btn-default:active,
@@ -3097,12 +3097,12 @@ fieldset[disabled] .btn-default:focus,
 .btn-default.disabled.focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus {
-  background-color: #006647;
+  background-color: #ffffff;
   border-color: #003300;
 }
 .btn-default .badge {
-  color: #006647;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
 }
 .btn-primary {
   color: #ffffff;
@@ -6999,6 +6999,9 @@ div.login-pf-lg {
 .bs-callout-primary h2 {
   color: #0070c9;
 }
+.bs-callout-primary h3 {
+  color: #0070c9;
+}
 .bs-callout-primary h4 {
   color: #0070c9;
 }
@@ -7098,6 +7101,12 @@ div.login-pf-lg {
 .gds-coloured-container .block-label input {
   width: 25px;
   height: 25px;
+}
+.gds-coloured-container .btn {
+  border: 0px;
+  color: #005ea5;
+  font-weight: 700;
+  padding: 5px 10px;
 }
 .sg-grid {
   background-color: #eeeeee;
@@ -7207,7 +7216,7 @@ div.login-pf-lg {
   line-height: 33.3333px;
 }
 .sg-colour-btn-default {
-  background-color: #006647;
+  background-color: #ffffff;
   color: #ffffff;
   font-size: 14px;
   height: 100px;
