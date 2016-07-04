@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>NHS.UK Diabetes Demo</title>
+	
+	<link rel="icon" href="resources/img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="resources/css/cip_main.css" media="screen" type="text/css" />
+	
+	<script type="text/javascript" src="resources/js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body class="">   
+		   	
+    <!--Blue Header -->
+		<section class="section" id="header"> <!--css class header-main for the blue heading bar -->
+			<div class="container header-main header-nhs">
+				<div class="row">
+					<div class= "container-fluid header-logo col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						<div class="row">
+							<a><img height="30" alt="Brand" src="resources/img/nhs_trans.png"></img></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+           
+    <!-- L Blue Sub-Header -->
+		<section class="section" id="sub-header">
+		<!--css class header-sub for the thin line or header-sub-expanded for thicker band and sub-heading -->
+			<div class="container header-sub-expanded">
+				<div class="row">
+					<div class= "container-fluid">
+						<div class="row">
+							<p class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-2 col-lg-3 col-lg-offset-3">Your planner for type 2 diabetes</p>
+							<a class="btn btn-primary btn-warning-so col-md-2 col-md-offset-3 col-lg-1 col-lg-offset-2 hidden-xs hidden-sm" type="submit" id="signOut">Sign out</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <!-- 2nd L Blue Sub Header - Hidden at md & lg screen sized, used for signout button on xs & sm screen sizes -->
+		<section class="section hidden-md hidden-lg" id="sub-header">
+				<!--css class header-sub for the thin line or header-sub-expanded for thicker band and sub-heading -->
+			<div class="container header-sub-expanded">
+				<div class="row">
+					<div class= "container-fluid">
+						<div class="row">
+							<a class="btn btn-primary btn-warning-so col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 hidden-md hidden-lg" type="submit" id="signOut">Sign out</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 3rd L Blue Sub Header - Hidden at md & lg screen sized, used for signout button on xs & sm screen sizes -->
+		<section class="section hidden-md hidden-lg" id="sub-header">
+			<!--css class header-sub for the thin line or header-sub-expanded for thicker band and sub-heading -->
+			<div class="container header-sub-expanded"></div>
+		</section>
+        
+        
+    <!-- Main Body -->
+		<section class="section" id="content">
+    	<div class="login-pf-lg standardText">
+      	<div class="container container-wrapper">
+					<div class="row">
+						<!-- ccs class content-wrapper is only needed when a button imediately proceeds it (fixes some spacing weirdness) -->
+						<div class="container-fluid content-text col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+							<div class="row">
+							<!--Main heaing, sub heading and lead paragraph, if using the progress sub-header css class inc-prog-sh is needed -->
+								<div class="lead">
+									<h2>
+									Hello Maurice Hutter
+									</h2>
+								</div>
+								<div>
+									<p>
+										<strong>Your user ID: </strong>Maurice<br />
+										<strong>Your email: </strong>maurice.hutter@mail.com<br />
+										<strong>Your NHS number: </strong>9464607335
+									</p>
+								</div>																
+								<div>
+									<h3>Your details</h3>
+								</div>
+								<!-- Your Details Accordion Start -->
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-primary">
+										<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A1C1" style="cursor: pointer">
+											<h4 class="panel-title">
+												Your latest blood sugar test results <i class="indicator fa fa-caret-right pull-right"></i>	          
+											</h4>
+										</div>
+										<div id="A1C1" class="panel-collapse collapse">
+											<div class="panel-body">
+											<h5>Result from 27th August 2016</h5>
+											<div class="result-large" style="padding: 0">
+												<h1 style="display: inline-block">55</h1><h2 style="display: inline-block">	&nbsp; mmol/mol</h2>
+											</div>
+											<h5>Target for 27th September 2016</h5>
+											<div class="result-small" style="padding: 0">
+												<h1 style="display: inline-block">48</h1><h2 style="display: inline-block">	&nbsp; mmol/mol</h2>
+											</div>
+											<a>Learn more about your blood sugar test result</a>
+											<br></br>
+											<h3>What you can do now</h3>
+											<p>As discussed with your GP you should:</p>
+											<ul>
+												<li>continue to take 500mg metformin a day</li>
+												<li><a>cut down of fatty and sugary foods you eat</a></li>
+												<li><a>increase the time you’re active each week</a>&nbsp;by 20 minutes</li>
+											</ul>
+											<a>See older test results</a>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-primary">
+										<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A1C2" style="cursor: pointer">
+											<h4 class="panel-title">
+												Your metformin medication 	
+												<i class="indicator fa fa-caret-right pull-right"></i>	          
+											</h4>
+										</div>
+										<div id="A1C2" class="panel-collapse collapse">
+											<div class="panel-body">
+												<p>You picked up your last prescription on 19 October 2015</p>
+												<h4>You’re on Metformin (500mg)</h4>
+												<ul>
+													<li>Take 1 tablet a day</li>
+													<li>Swallow tablets with water after you’ve eaten</li>
+													<li>Do not chew these tablets</li>
+												</ul>
+												<p>Metformin can cause side effects. <a>Speak to your GP</a> if you have:</p>
+												<ul>
+													<li>bloating</li>
+													<li>diarrhoea</li>
+													<li>feeling sick</li>
+												</ul>
+												<a role="button" data-toggle="collapse" href="#moreMet" id="moreMetLink">
+												<i class="fa fa-caret-right" style="width: 15px;"></i>
+												&nbsp;More about Metformin
+												</a>
+												<div class="collapse" id="moreMet" style="margin-top: 10px;">
+													<p>Metformin helps keep your blood sugar (glucose) level under control.
+													<br></br>
+													It works by:</p>
+													<ul>
+														<li>reducing the amount of glucose released into your blood</li>
+														<li>helping the cells remove glucose from the blood</li>
+														<li>educing the amount of glucose you absorb from your food</li>
+													</ul>
+													<a>Read about metformin on Diabetes UK</a>
+												</div>
+											</div>
+										</div>
+									</div>
+							  	<!-- Your Details Accordion End -->						  	
+							  	<div>
+										<h3>Things to do now</h3>
+									</div>
+							  	<!-- Things to do Accordion Start -->
+									<div class="panel-group" id="accordion">
+							  		<div class="panel panel-info">
+							    		<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A2C1" style="cursor: pointer">
+												<h4 class="panel-title">
+													Book your blood sugar test 	
+													<i class="indicator fa fa-caret-right pull-right"></i>	          
+												</h4>
+							    		</div>
+							    		<div id="A2C1" class="panel-collapse collapse">
+												<div class="panel-body">
+													<p>You need to have your blood sugar level checked every 3 months so yourmedication can be adjusted if needed.</p>
+													<a>More about blood sugar tests</a>
+													<br></br>
+													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2">Book Now</a>
+												</div>
+							    		</div>
+							  		</div>
+							  		<div class="panel panel-info">
+							    		<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A2C2" style="cursor: pointer">
+												<h4 class="panel-title">
+													Book your diabetes review 	
+													<i class="indicator fa fa-caret-right pull-right"></i>	          
+												</h4>
+							    		</div>
+							    		<div id="A2C2" class="panel-collapse collapse">
+												<div class="panel-body">
+													<p>Your GP will go over your blood test results and discuss your:</p>
+													<ul>
+														<li>blood sugar levels from the past 12 months and set a target with you for the next 3 months</li>	
+														<li>blood fats (cholesterol) level</li>
+														<li>liver function</li>
+													</ul>
+													<p>The review is also a general health check. You’ll have:</p>
+													<ul>
+														<li>your blood pressure taken</li>	
+														<li>a urine test for kidney function</li>
+														<li>your weight measured</li>
+													</ul>
+													<a>Health problems caused by type 2 diabetes</a>
+													<br></br>
+													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2">Book Now</a>
+												</div>
+							    		</div>
+							  		</div>
+							  		<div class="panel panel-info">
+							    		<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A2C3" style="cursor: pointer">
+												<h4 class="panel-title">
+													Book your diabetes eye check 	
+													<i class="indicator fa fa-caret-right pull-right"></i>	          
+												</h4>
+							    		</div>
+							    		<div id="A2C3" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="alert alert-warning" role="alert">You shouldn’t drive for 2 hours after the eye check.</div>
+													<p>diabetes eye check looks for damage to your eyes which can lead to sight problems and possibly blindness:</p>
+													<ul>
+														<li>you get drops in your eyes to enlarge your pupils (temporarily)</li>	
+														<li>a photo will be taken of the back of your eye</li>
+														<li>your vision can be blurry for a couple of hours afterwards</li>
+													</ul>
+													<a>Why diabetes eye checks are important</a>
+													<br></br>
+													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2">Book Now</a>
+												</div>
+							    		</div>
+							  		</div>
+									</div>
+									<!-- Things to do Accordian End -->	
+									<div>
+										<h3>Appointments and reminders</h3>
+									</div>
+									<!-- Your Details Accordion Start -->
+									<div class="panel-group" id="accordion">
+							  		<div class="panel panel-primary">
+							    		<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A3C1" style="cursor: pointer">
+												<h4 class="panel-title">
+													Pick up your next prescription	
+													<i class="indicator fa fa-caret-right pull-right"></i>	          
+												</h4>
+												<h5>19th November 2016</h5>
+							    		</div>
+											<div id="A3C1" class="panel-collapse collapse">
+												<div class="panel-body">
+													<h3>30x500mg of metformin tablets</h3>
+													<p>Pick up from:<br/>
+														<br/>
+														Essentials Pharmacy <br/>
+														169 Drury Lane <br/>
+														London <br/>
+														WC2B 5QA <br/>
+														<a>Show a map</a>
+													</p>
+													<br/>
+													<ul>
+														<li><a>Send me a text reminder 2 days before</a></li>
+														<li><a>Change pharmacy</a></li>
+													</ul>
+													<br/>
+													<p>You don't have to see your GP for this prescription.</p>
+												</div>
+							    		</div>
+							  		</div>
+							  	</div>
+							  	<!-- Your Details Accordion End -->								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<section class="section" id="sub-footer">
+			<div class="container footer-sub">
+				<div class="row"></div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container container-wrapper">
+				<div class="row">
+					<div class="container-fluid col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						<div class="row">
+							<p>
+								<br></br>
+								&copy; Crown copyright
+								<br></br>
+								Content available under
+								<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>
+								, except where otherwise stated.
+								<br></br>
+							</p>
+						</div>
+						<div class="row hidden-xs hidden-sm">
+							<p>
+								<a href="your-app-complete.html" id="yourAppLink">Your App</a>
+								|
+								<a href="appointment-complete.html" id="appointmentLink">Appointment</a>
+								|
+								<a href="prescriptions-complete.html" id="prescriptionsLink">Prescriptions</a>
+							</p>
+						</div>
+						<div class="row hidden-md hidden-lg">
+							<a href="your-app-complete.html" class="btn btn-primary col-xs-12 col-sm-12" id="yourAppLinkMob">Your App</a>
+							<a href="appointment-complete.html" class="btn btn-primary col-xs-12 col-sm-12" id="appointmentLinkMob">Appointment</a>
+							<a href="prescriptions-complete.html" class="btn btn-primary col-xs-12 col-sm-12" id="prescriptionsLinkMob">Prescriptions</a>
+						</div>
+						<br></br>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
