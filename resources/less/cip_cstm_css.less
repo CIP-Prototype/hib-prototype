@@ -23,7 +23,7 @@ h1, h2, h3, h4{
 
 
 label{
-	font-size: @font-size-lg;
+	font-size: @fs-lg;
 	font-weight: @font-weight-bold;
 }
 
@@ -66,7 +66,7 @@ p{
 //Lead Paragraph ----------------------------------------------------------------------------------------------
 
 lead-p{
-	font-size: @font-size-lg;
+	font-size: @fs-lg;
 }
 //REMOVE NOT NEEDED
 
@@ -75,7 +75,7 @@ lead-p{
 
 .lead{
 	p{
-		font-size: @font-size-lg;
+		font-size: @fs-lg;
 	}
 }
 
@@ -176,7 +176,7 @@ section{
 
 	p{
   	color: @nhs-white;
-  	font-size: @font-size-footer;
+  	font-size: @fs-footer;
   	//line-height: 50px;
     //white-space: nowrap;
     margin-bottom: 0px;
@@ -503,7 +503,6 @@ div.login-pf-lg {
 	}
 }
 
-//Used for pages when no service name is needed ie a start page
 .header-gds-sub{
 	background-color: @gds-govuk-blue;
 	width: 100%;
@@ -549,6 +548,54 @@ div.login-pf-lg {
 	}
 }
 
+.gds-feedback {
+	font-size: 16px;
+	color: @gds-grey-1;
+	text-decoration: underline;
+}
+
+//Footer
+.gds-body {
+	background-color:@gds-grey-3;
+}
+
+.gds-footer {
+	background-color: @gds-grey-3;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid @gds-grey-1;
+
+	p {
+  	color: @gds-footer-grey;
+  	font-size: 16px;
+  	//line-height: 50px;
+    //white-space: nowrap;
+    margin-bottom: 0px;
+  }
+
+  a {
+  	color: @gds-footer-grey;
+		text-decoration: underline;
+  }
+
+	.gds-cw-text {
+		padding-top: 15px;
+		padding-left: 0px;
+		line-height: 2.5;
+	}
+
+	.gds-cw-img {
+		padding-right: 0px;
+		line-height: 2.5;
+
+		img {
+			float: right;
+		}
+		p {
+			float: right;
+		}
+	}
+}
 
 //-------------------------------------------------------------------------------------------------------------
 //Style Guide -------------------------------------------------------------------------------------------------
@@ -566,7 +613,7 @@ div.login-pf-lg {
 .sg-colour-grey-b{
 	background-color: @gray-base;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 50px;
@@ -575,7 +622,7 @@ div.login-pf-lg {
 .sg-colour-grey{
 	background-color: @gray;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 50px;
@@ -584,7 +631,7 @@ div.login-pf-lg {
 .sg-colour-grey-l{
 	background-color: @gray-light;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 50px;
@@ -592,7 +639,7 @@ div.login-pf-lg {
 
 .sg-colour-grey-ltr{
 	background-color: @gray-lighter;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 50px;
@@ -601,7 +648,7 @@ div.login-pf-lg {
 .sg-colour-grey-d{
 	background-color: @gray-dark;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 50px;
@@ -610,7 +657,7 @@ div.login-pf-lg {
 .sg-colour-grey-dkr{
 	background-color: @gray-darker;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 50px;
@@ -620,7 +667,7 @@ div.login-pf-lg {
 .sg-colour-primary-nhs{
 	background-color: @nhs-light-blue;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 33.3333px;
@@ -629,7 +676,7 @@ div.login-pf-lg {
 .sg-colour-secondary-nhs{
 	background-color: @brand-secondary;
 	//color: @nhs-black;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 33.3333px;
@@ -638,7 +685,7 @@ div.login-pf-lg {
 .sg-colour-primary-other{
 	background-color: @seren-blue;
 	//color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 33.3333px;
@@ -647,7 +694,7 @@ div.login-pf-lg {
 .sg-colour-primary-grey{
 	background-color: @grey-dark;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 33.3333px;
@@ -656,7 +703,7 @@ div.login-pf-lg {
 .sg-colour-secondary-grey{
 	background-color: @grey-light;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 33.3333px;
@@ -665,7 +712,7 @@ div.login-pf-lg {
 .sg-colour-footer{
 	background-color: @grey-light;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 33.3333px;
@@ -675,7 +722,7 @@ div.login-pf-lg {
 .sg-colour-error{
 	background-color: @state-danger-text;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 33.3333px;
@@ -684,7 +731,7 @@ div.login-pf-lg {
 .sg-colour-btn-default{
 	background-color: @btn-default-bg;
 	color: @nhs-white;
-	font-size: @font-size-footer;
+	font-size: @fs-footer;
 	height: 100px;
 	text-align: center;
 	line-height: 33.3333px;
@@ -701,7 +748,7 @@ div.login-pf-lg {
 
   p{
   	color: @nhs-white;
-  	font-size: @font-size-footer;
+  	font-size: @fs-footer;
   	line-height: 50px;
     white-space: nowrap;
     //padding-top: 0px;

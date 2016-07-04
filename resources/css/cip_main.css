@@ -1256,19 +1256,19 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 48px;
+  font-size: 2.526em;
 }
 h2,
 .h2 {
-  font-size: 36px;
+  font-size: 2.526em;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 2.526em;
 }
 h4,
 .h4 {
-  font-size: 19px;
+  font-size: 2.526em;
 }
 h5,
 .h5 {
@@ -5712,22 +5712,22 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #d6e9c6;
 }
 .panel-info {
-  border-color: #e5f0f9;
+  border-color: #003595;
 }
 .panel-info > .panel-heading {
   color: #ffffff;
-  background-color: #e5f0f9;
-  border-color: #e5f0f9;
+  background-color: #003595;
+  border-color: #003595;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #e5f0f9;
+  border-top-color: #003595;
 }
 .panel-info > .panel-heading .badge {
-  color: #e5f0f9;
+  color: #003595;
   background-color: #ffffff;
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #e5f0f9;
+  border-bottom-color: #003595;
 }
 .panel-warning {
   border-color: #faebcc;
@@ -6726,6 +6726,16 @@ button.close {
     display: none !important;
   }
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 19px;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
 h1,
 h2,
 h3,
@@ -6741,7 +6751,7 @@ h4 {
   width: 100%;
 }
 label {
-  font-size: 24px;
+  font-size: 1.263em;
   font-weight: 700;
 }
 .form-control:focus {
@@ -6765,10 +6775,10 @@ p a {
   cursor: pointer;
 }
 lead-p {
-  font-size: 24px;
+  font-size: 1.263em;
 }
 .lead p {
-  font-size: 24px;
+  font-size: 1.263em;
 }
 .inc-prog-sh h5 {
   color: #758693;
@@ -7107,6 +7117,44 @@ div.login-pf-lg {
   color: #005ea5;
   font-weight: 700;
   padding: 5px 10px;
+}
+.gds-feedback {
+  font-size: 16px;
+  color: #6f777b;
+  text-decoration: underline;
+}
+.gds-body {
+  background-color: #dee0e2;
+}
+.gds-footer {
+  background-color: #dee0e2;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #6f777b;
+}
+.gds-footer p {
+  color: #454a4c;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.gds-footer a {
+  color: #454a4c;
+  text-decoration: underline;
+}
+.gds-footer .gds-cw-text {
+  padding-top: 15px;
+  padding-left: 0px;
+  line-height: 2.5;
+}
+.gds-footer .gds-cw-img {
+  padding-right: 0px;
+  line-height: 2.5;
+}
+.gds-footer .gds-cw-img img {
+  float: right;
+}
+.gds-footer .gds-cw-img p {
+  float: right;
 }
 .sg-grid {
   background-color: #eeeeee;

@@ -45,14 +45,12 @@
 @font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace; //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-base: 'Roboto', sans-serif;
 
-@font-size-base: 19px;
-@font-size-lg: 24px; //cstm size for lead paragraphs, labels etc
-@font-size-footer: 14px; //cstm size for footer
+@font-size-base: @fs-lg-base;
 
-@font-size-h1: 48px;
-@font-size-h2: 36px;
-@font-size-h3: 24px;
-@font-size-h4: 19px;
+@font-size-h1: @fs-h1;
+@font-size-h2: @fs-h1;
+@font-size-h3: @fs-h1;
+@font-size-h4: @fs-h1;
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base: 1.5;
@@ -110,5 +108,5 @@
 @panel-inner-border:          #ddd;
 @panel-footer-bg:             #f5f5f5;
 @panel-info-text:             @nhs-white;
-@panel-info-border:           @brand-secondary;
-@panel-info-heading-bg:       @brand-secondary;
+@panel-info-border:           @nhs-dark-blue;
+@panel-info-heading-bg:       @nhs-dark-blue;
