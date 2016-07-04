@@ -7161,9 +7161,19 @@ div.login-pf-lg {
   padding-right: 0px;
   line-height: 2.5;
 }
-.gds-footer .gds-cw-img img {
-  float: right;
+@media (max-width: 768px) {
+  .gds-footer .gds-cw-img img {
+    float: none;
+  }
+  .gds-footer .gds-cw-img p {
+    float: none;
+  }
 }
-.gds-footer .gds-cw-img p {
-  float: right;
+@media (min-width: 768px) {
+  .gds-footer .gds-cw-img img {
+    float: right;
+  }
+  .gds-footer .gds-cw-img p {
+    float: right;
+  }
 }

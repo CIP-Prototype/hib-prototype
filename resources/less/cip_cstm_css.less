@@ -586,11 +586,22 @@ div.login-pf-lg {
 		padding-right: 0px;
 		line-height: 2.5;
 
-		img {
-			float: right;
+		@media (max-width: @screen-sm) {
+			img {
+				float: none;
+			}
+			p {
+				float: none;
+			}
 		}
-		p {
-			float: right;
+
+		@media (min-width: @screen-sm) {
+			img {
+				float: right;
+			}
+			p {
+				float: right;
+			}
 		}
 	}
 }
