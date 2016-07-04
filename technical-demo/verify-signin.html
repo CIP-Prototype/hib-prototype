@@ -11,6 +11,7 @@
 
 	<script type="text/javascript" src="../resources/js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/js/verify-signin.js"></script>
 	</head>
 
 	<body class="gds-body">
@@ -65,28 +66,25 @@
 										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 											<h2>Sign in with GOV.UK Verify</h2>
 
-											<div class="clearfix">
-												<div class="radio-inline">
-													<label class="block-label block-label-inline">
-														<input type="radio" name="brokerChooser" id="yes" value="yes">
-														This is my first time using Verify
-													</label>
+											<form role="form" id="">
+												<div class="row">
+													<div class="form-group col-sm-8">
+														<label class="control-label" for="input ">Username</label>
+														<input class="form-control" id="input" placeholder="" type="text">
+													</div>
 												</div>
-											</div>
-
-											<div class="clearfix">
-												<div class="radio-inline">
-													<label class="block-label block-label-inline">
-														<input type="radio" name="brokerChooser" id="create" value="create">
-														I’ve used Verify before
-													</label>
+												<div class="row">
+													<div class="form-group col-sm-8">
+														<label class="control-label" for="input ">Password</label>
+														<input class="form-control" id="input" placeholder="" type="password">
+													</div>
 												</div>
-											</div>
+											</form>
 
 											<br/>
 
-											<div class="clearfix" style="margin-left: 15px;">
-												<a class="btn btn-default col-xs-12 col-sm-4 col-md-4 col-lg-3" id="Next" href="verify-signin.html">Continue</a>
+											<div class="clearfix">
+												<a class="btn btn-default col-xs-12 col-sm-4 col-md-4 col-lg-3" id="verifySignin">Sign In</a>
 											</div>
 										</div>
 								</div>
