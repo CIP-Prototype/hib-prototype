@@ -4,6 +4,6 @@ var PORT = process.env.PORT;
 
 console.log("Port = PORT");
 
-connect().use(serveStatic(__dirname, {'index': ['gp-home-portal.html']})).listen(PORT, function(){
+connect().use(serveStatic(__dirname, {'index': ['index.html']})).listen(PORT, function(){
    console.log('Server running on $PORT...');
 });
