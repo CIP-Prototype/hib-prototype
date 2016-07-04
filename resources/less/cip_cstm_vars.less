@@ -1,4 +1,7 @@
 // Typography --------------------------------------------------------------------------------------------------------
+@fs-lg-base: 19px;
+@fs-sm-base: 16px;
+@fs-xs-base: 14px;
 
 //Base Font
 @fs-base: 1rem; //Base font size
@@ -11,11 +14,19 @@
 @fs-h3: 1.263rem; // ~24px @ lg
 @fs-h4: 1rem; // ~19px @ lg
 
+//Other
+@result-lg-h1:4.526rem;
+@result-sm-h1:3.158rem;
+
 //media queries
-@media (max-width: @screen-sm) {
-    html{font-size:16px;}
+@media (max-width: @screen-xs) {
+    html{font-size: @fs-xs-base;}
+}
+
+@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+    html{font-size: @fs-sm-base;}
 }
 
 @media (min-width: @screen-sm) {
-    html{font-size: 19px;}
+    html{font-size: @fs-lg-base;}
 }

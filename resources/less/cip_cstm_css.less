@@ -276,12 +276,11 @@ div.login-pf-lg {
 
 .result-large {
 		h1 {
-				font-size: 86px;
+				font-size: @result-lg-h1;
 				margin-top: 0;
 		}
 
   	h2 {
-				font-size: 36px;
 				margin-top: 0;
 		}
 
@@ -289,12 +288,12 @@ div.login-pf-lg {
 
 .result-small {
 	h1 {
-		font-size: 60px;
+		font-size: @result-sm-h1;
 		margin-top: 0;
 	}
 
 	h2 {
-		font-size: 24px;
+		font-size: @fs-h3;
 		margin-top: 0;
 	}
 }
@@ -487,7 +486,7 @@ div.login-pf-lg {
 			padding-bottom: 0px;
 			padding-left: 45px;
 			color: @gds-white;
-			font-size: 30px;
+			font-size: 1.579rem;
 			font-weight: 700;
 			margin-bottom: 0px;
 		}
@@ -504,7 +503,7 @@ div.login-pf-lg {
 	p{
 		padding-top: 15px;
 		margin-bottom: 10px;
-		font-size: 16px;
+		font-size:  0.8421rem;
 	}
 	hr {
 		margin: 0px;
@@ -517,13 +516,21 @@ div.login-pf-lg {
 	color: @gds-white;
 	padding: 75px 20px;
 
+	@media (max-width: @screen-sm) {
+		padding: 25px 10px
+	}
+
+	@media (min-width: @screen-sm) {
+		padding: 75px 20px
+	}
+
 	h2{
 		margin-top: 0px;
 		margin-bottom: 25px;
 	}
 
 	.block-label{
-		font-size: 24px;
+		font-size: @fs-h3;
 
 		input{
 			width: 25px;
