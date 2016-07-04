@@ -4,31 +4,39 @@
 	<head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Your NHS Service Demo</title>
+	<title>NHS.UK Appointment Demo</title>
 
 	<link rel="icon" href="../resources/img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="../resources/css/cip_main.css" media="screen" type="text/css" />
 
 	<script type="text/javascript" src="../resources/js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/js/diabetes-demo.js"></script>
 	</head>
 
 	<body class="">
     <!--Blue Header -->
 		<section class="section" id="header"> <!--css class header-main for the blue heading bar -->
-			<div class="container header-main header-grey">
+			<div class="container header-main header-nhs">
+				<div class="row">
+					<div class= "container-fluid header-logo col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						<div class="row">
+							<a><img height="30" alt="Brand" src="../resources/img/nhs_trans.png"></img></a>
+						</div>
+					</div>
+				</div>
 			</div>
     </section>
 
     <!-- L Blue Sub-Header -->
 		<section class="section" id="sub-header">
 		<!--css class header-sub for the thin line or header-sub-expanded for thicker band and sub-heading -->
-			<div class="container header-sub-expanded header-sub header-sub-grey">
+			<div class="container header-sub-expanded">
 					<div class="row">
 							<div class= "container-fluid">
 									<div class="row">
-											<p class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-2 col-lg-3 col-lg-offset-3"></p>		
-											<a href="your-app-start.html" class="btn btn-primary btn-warning-so col-md-2 col-md-offset-3 col-lg-1 col-lg-offset-2 hidden-xs hidden-sm" type="submit" id="signOut">Sign out</a>
+											<p class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-2 col-lg-3 col-lg-offset-3">Book an appointment</p>
+											<a href="appointment-signedout.html" class="btn btn-primary btn-warning-so col-md-2 col-md-offset-3 col-lg-1 col-lg-offset-2 hidden-xs hidden-sm" type="submit" id="signOut">Sign out</a>
 									</div>
 							</div>
 					</div>
@@ -41,8 +49,7 @@
 					<div class="row">
 							<div class= "container-fluid">
 									<div class="row">
-											<p class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-2 col-lg-3 col-lg-offset-3"></p>
-											<a href="your-app-start.html" class="btn btn-primary btn-warning-so col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 hidden-md hidden-lg" type="submit" id="signOut">Sign out</a>
+											<a href="appointment-signedout.html" class="btn btn-primary btn-warning-so col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 hidden-md hidden-lg" type="submit" id="signOut">Sign out</a>
 									</div>
 							</div>
 					</div>
@@ -65,7 +72,7 @@
 							<div class="row">
 								<!--Main heaing, sub heading and lead paragraph, if using the progress sub-header css class inc-prog-sh is needed -->
 								<div class="lead">
-									<h1>Welcome</h1>
+									<h1>Book appointment</h1>
 								</div>
 								<div class="clearfix">
 									<h2>Hello Maurice Hutter</h2>
@@ -73,18 +80,56 @@
 										<b>Your user ID: </b>Maurice<br/>
 										<b>Your email: </b>maurice.hutter@mail.com<br/>
 										<b>Your NHS number: </b>9876543210
-									</p>								
+									</p>
+									<br/>								
+								</div>
+								<div class="bs-callout bs-callout-primary col-xs-12 col-sm-12 col-md-10 col-lg-9">
+									<h3>Thursday 28th January 2016 at 11:30</h3>
+									<br/>
+									<div class="clearfix">
+										<div class="col-xs-12 col-sm-12 col-md-2 col-lg-3">
+											<img src="../resources/img/icon-avatar-mike-johnson.png" alt="avatar" height="80px"/>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-10 col-lg-9">
+											<p>
+												<b>Dr Mike Johnson</b><br/>
+												GP, male<br/>
+												10 minute <b>face to face</b> appointment
+											</p>
+											<br/>
+										</div>								
+										<div class="clearfix">
+											<p>
+											<strong>Lakeside Surgery</strong>, 22 Castelnau, London, NW13 9HJ
+											</p>	
+										</div>		
+									</div>					
 								</div>							
-							</div>			
+							</div>
+							<br/>
+							<div class="row">
+								<a class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="bookAppointment" data-toggle="modal" data-target="#myModal">Book a GP appointment</a>
+							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h4 class="modal-title" id="myModalLabel">Demo Endpoint</h4>
+										</div>
+										<div class="modal-body">
+											This button is disabled in the demo. Click close to continue.
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>		
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="container ws-pad-100">
-				<div class="row"></div>
-			</div>
-			<div class="container ws-pad-100">
-				<div class="row"></div>
 			</div>
     </section>
 
@@ -110,20 +155,20 @@
 		          </p>
 		        </div>
 						<div class="row hidden-xs hidden-sm">
-		          <p>
-		            <a href="appointment-complete.html" id="appointmentLink">Appointment</a>
-		            |
-		            <a href="diabetes-complete.html" id="diabetesLink">Diabetes</a>
+							<p>
+								<a href="your-app-complete.html" id="yourAppLink">Your App</a>
 								|
-		            <a href="prescriptions-complete.html" id="diabetesLink">Prescriptions</a>
-		          </p>
-		        </div>
-		        <div class="row hidden-md hidden-lg">
-		          <a href="appointment-complete.html" class="btn btn-default col-xs-12 col-sm-12" id="appointmentLinkMob">Appointment</a>
-		  	      <a href="diabetes-complete.html" class="btn btn-default col-xs-12 col-sm-12" id="diabetesLinkMob">Diabetes</a>
-		  	      <a href="prescriptions-complete.html" class="btn btn-default col-xs-12 col-sm-12" id="prescriptionsLinkMob">Prescriptions</a>
-		        </div>
-		        <br></br>
+								<a href="appointment-complete.html" id="appointmentLink">Appointment</a>
+								|
+								<a href="prescriptions-complete.html" id="prescriptionsLink">Prescriptions</a>
+							</p>
+						</div>
+						<div class="row hidden-md hidden-lg">
+							<a href="your-app-complete.html" class="btn btn-primary col-xs-12 col-sm-12" id="yourAppLinkMob">Your App</a>
+							<a href="appointment-complete.html" class="btn btn-primary col-xs-12 col-sm-12" id="appointmentLinkMob">Appointment</a>
+							<a href="prescriptions-complete.html" class="btn btn-primary col-xs-12 col-sm-12" id="prescriptionsLinkMob">Prescriptions</a>
+						</div>
+						<br></br>
 		      </div>
 		    </div>
 		  </div>
