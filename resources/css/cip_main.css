@@ -6726,7 +6726,12 @@ button.close {
     display: none !important;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
   html {
     font-size: 16px;
   }
@@ -6921,19 +6926,18 @@ div.login-pf-lg {
   min-height: 360px;
 }
 .result-large h1 {
-  font-size: 86px;
+  font-size: 4.526rem;
   margin-top: 0;
 }
 .result-large h2 {
-  font-size: 36px;
   margin-top: 0;
 }
 .result-small h1 {
-  font-size: 60px;
+  font-size: 3.158rem;
   margin-top: 0;
 }
 .result-small h2 {
-  font-size: 24px;
+  font-size: 1.263rem;
   margin-top: 0;
 }
 .panel-title {
@@ -7075,7 +7079,7 @@ div.login-pf-lg {
   padding-bottom: 0px;
   padding-left: 45px;
   color: #fff;
-  font-size: 30px;
+  font-size: 1.579rem;
   font-weight: 700;
   margin-bottom: 0px;
 }
@@ -7087,7 +7091,7 @@ div.login-pf-lg {
 .gds-language p {
   padding-top: 15px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 0.8421rem;
 }
 .gds-language hr {
   margin: 0px;
@@ -7098,12 +7102,22 @@ div.login-pf-lg {
   color: #fff;
   padding: 75px 20px;
 }
+@media (max-width: 768px) {
+  .gds-coloured-container {
+    padding: 25px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .gds-coloured-container {
+    padding: 75px 20px;
+  }
+}
 .gds-coloured-container h2 {
   margin-top: 0px;
   margin-bottom: 25px;
 }
 .gds-coloured-container .block-label {
-  font-size: 24px;
+  font-size: 1.263rem;
 }
 .gds-coloured-container .block-label input {
   width: 25px;
