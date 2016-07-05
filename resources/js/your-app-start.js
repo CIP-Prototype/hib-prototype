@@ -11,7 +11,7 @@ function chosenApp (app) {
   sessionStorage.app = appName;
   if (appName=="yourApp") {
     if (sessionStorage.loggedIn == 'true') {
-        window.location.href = 'your-app-complete.html';
+        window.location.href = 'your-app-biometric.html';
     }
     else {
         window.location.href = 'broker-chooser.html';
