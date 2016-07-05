@@ -176,7 +176,7 @@
 													<p>You need to have your blood sugar level checked every 3 months so yourmedication can be adjusted if needed.</p>
 													<a>More about blood sugar tests</a>
 													<br></br>
-													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2">Book Now</a>
+													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" data-toggle="modal" data-target="#myModal">Book Now</a>
 												</div>
 							    		</div>
 							  		</div>
@@ -203,7 +203,7 @@
 													</ul>
 													<a>Health problems caused by type 2 diabetes</a>
 													<br></br>
-													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2">Book Now</a>
+													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" data-toggle="modal" data-target="#myModal">Book Now</a>
 												</div>
 							    		</div>
 							  		</div>
@@ -225,7 +225,7 @@
 													</ul>
 													<a>Why diabetes eye checks are important</a>
 													<br></br>
-													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2">Book Now</a>
+													<a class="btn btn-primary col-xs-12 col-sm-12 col-md-2 col-lg-2" data-toggle="modal" data-target="#myModal">Book Now</a>
 												</div>
 							    		</div>
 							  		</div>
@@ -236,14 +236,14 @@
 									</div>
 									<!-- Your Details Accordion Start -->
 									<div class="panel-group" id="accordion">
-							  		<div class="panel panel-primary">
-							    		<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A3C1" style="cursor: pointer">
-												<h4>
-													Pick up your next prescription
-													<i class="indicator fa fa-caret-right pull-right"></i>
-												</h4>
-												<h5>19th November 2016</h5>
-							    		</div>
+										<div class="panel panel-primary">
+											<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A3C1" style="cursor: pointer">
+													<h4>
+														Pick up your next prescription
+														<i class="indicator fa fa-caret-right pull-right"></i>
+													</h4>
+													<h5>19th November 2016</h5>
+											</div>
 											<div id="A3C1" class="panel-collapse collapse">
 												<div class="panel-body">
 													<h3>30x500mg of metformin tablets</h3>
@@ -263,10 +263,27 @@
 													<br/>
 													<p>You don't have to see your GP for this prescription.</p>
 												</div>
-							    		</div>
-							  		</div>
-							  	</div>
-							  	<!-- Your Details Accordion End -->
+											</div>
+										</div>
+									</div>
+							  		<!-- Your Details Accordion End -->
+									<!-- Modal -->
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+													<h4 class="modal-title" id="myModalLabel">Demo Endpoint</h4>
+												</div>
+												<div class="modal-body">
+													This button is disabled in the demo. Click close to continue.
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
