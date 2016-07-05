@@ -8,7 +8,6 @@ function chosenApp (app) {
 
   var appName = app.data.appName;
 
-//   sessionStorage.clear();
   sessionStorage.app = appName;
   if (appName=="bookGP") {
     if (sessionStorage.loggedIn == 'true') {

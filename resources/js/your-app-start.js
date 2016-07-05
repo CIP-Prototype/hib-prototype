@@ -8,9 +8,13 @@ function chosenApp (app) {
 
   var appName = app.data.appName;
 
-  sessionStorage.clear();
   sessionStorage.app = appName;
   if (appName=="yourApp") {
-    window.location.href = 'broker-chooser.html';
+    if (sessionStorage.loggedIn == 'true') {
+        window.location.href = 'your-app-complete.html';
+    }
+    else {
+        window.location.href = 'broker-chooser.html';
+    }
   }
 }
