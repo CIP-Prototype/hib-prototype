@@ -1,6 +1,11 @@
 $(window).load(function() {
 
 	$("#verifySignin").click(verifySignin);
+    
+    $("#Next").click(function() {
+       $("#landing").hide();
+       $("#signIn").show();
+    });
 });
 
 function verifySignin () {
