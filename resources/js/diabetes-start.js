@@ -14,7 +14,7 @@ function chosenApp (app) {
         window.location.href = 'diabetes-complete.html';
     }
     else {
-        window.location.href = 'broker-chooser.html';
+        window.location.href = 'broker.html';
     }
   }
 }

@@ -14,7 +14,7 @@ function chosenApp (app) {
         window.location.href = 'prescriptions-complete.html';
     }
     else {
-        window.location.href = 'broker-chooser.html';
+        window.location.href = 'broker.html';
     }
   }
 }

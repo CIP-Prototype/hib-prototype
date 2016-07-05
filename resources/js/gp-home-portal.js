@@ -19,6 +19,6 @@ function chosenApp (app) {
   sessionStorage.clear();
   sessionStorage.app = appName;
   if (appName=="bookGP" || "orderPresc" || "viewPlanner" || "yourApp") {
-    window.location.href = 'broker-chooser.html';
+    window.location.href = 'broker.html';
   }
 }

@@ -6,6 +6,14 @@ $(window).load(function() {
 	$("#create").click({radioOption:"create"},radioSelect);
 	$("#continue").click({radioOption:"continue"},radioSelect);
 	$("#Next").click(radioEnter);
+	
+	if (sessionStorage.app == "orderPresc" || sessionStorage.app == "viewPlanner") {
+		$("#noLogIn").hide();
+	}
+	
+	if (sessionStorage.app == "orderPresc") {
+		$("#verify").hide();
+	}	
 
 });
 
@@ -16,10 +24,14 @@ function radioSelect (option) {
 function radioEnter () {
 
 				if( radioOption == 'yes') {
-					  window.location.href = 'signin-selector.html';
+					$("#chooser").hide();
+					$("#createAccount").hide();
+					$("#selector").show();				
 				}
 				else if (radioOption == 'create'){
-					  window.location.href = 'create-account.html';
+					$("#chooser").hide();
+					$("#selector").hide();
+					$("#createAccount").show();
 				}
 			 	else if (radioOption == 'continue'){
 						if (sessionStorage.app == "bookGP" ) {
