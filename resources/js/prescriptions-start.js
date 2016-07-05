@@ -11,7 +11,7 @@ function chosenApp (app) {
   sessionStorage.app = appName;
   if (appName=="orderPresc") {
     if (sessionStorage.loggedIn == 'true') {
-        window.location.href = 'appointment-complete.html';
+        window.location.href = 'prescriptions-complete.html';
     }
     else {
         window.location.href = 'broker-chooser.html';
