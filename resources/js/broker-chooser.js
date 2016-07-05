@@ -31,5 +31,8 @@ function radioEnter () {
 						else if (sessionStorage.app == "viewPlanner" ) {
 							window.location.href = 'diabetes-complete.html'
 						}
+						else if (sessionStorage.app == "yourApp" ) {
+							window.location.href = 'your-app-complete.html'
+						}
 				}
 };

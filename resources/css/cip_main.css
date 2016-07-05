@@ -6850,7 +6850,7 @@ section {
 }
 .footer p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 0.7368rem;
   margin-bottom: 0px;
 }
 .footer a {
@@ -6942,6 +6942,14 @@ div.login-pf-lg {
 }
 .panel-title {
   font-weight: 400;
+}
+.panel-heading h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.panel-heading h5 {
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 .icon-text {
   position: relative;
