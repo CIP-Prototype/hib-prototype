@@ -49,7 +49,7 @@
 
 								<div class="row">
 									<div class="col-lg-offset-8 col-lg-4 gds-language">
-										<p>English &nbsp; | &nbsp; <a>Cymraeg</a></p>
+										<p>English &nbsp; | &nbsp; <a data-toggle="modal" data-target="#myModal">Cymraeg</a></p>
 										<hr/>
 									</div>
 								</div>
@@ -92,7 +92,7 @@
 								</div>
 
 								<br/>
-								<a class="gds-feedback">Your feedback will help us to improve GOV.UK Verify</a>
+								<a class="gds-feedback" data-toggle="modal" data-target="#myModal">Your feedback will help us to improve GOV.UK Verify</a>
 								<br/>
 								<br/>
 								<br/>
@@ -103,6 +103,25 @@
         </div>
       </div>
     </section>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Demo Endpoint</h4>
+					</div>
+					<div class="modal-body">
+						This button is disabled in the demo. Click close to continue.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal End -->
 
     <!-- Footer -->
     <footer class="gds-footer">
@@ -113,7 +132,9 @@
 							<div class="col-lg-10 col-xs-12 gds-cw-text">
 								<br/>
 								<br/>
-								<p><a>Help</a> &nbsp;&nbsp; <a>Cookies</a> &nbsp;&nbsp; <a>Privacy notice</a> &nbsp;&nbsp; <a>Feedback</a> &nbsp;&nbsp; Built by the <a>Government Digital Service</a></p>
+								<p><a data-toggle="modal" data-target="#myModal">Help</a> &nbsp;&nbsp; <a data-toggle="modal" data-target="#myModal">Cookies</a> 
+									&nbsp;&nbsp; <a data-toggle="modal" data-target="#myModal">Privacy notice</a> &nbsp;&nbsp; <a data-toggle="modal" data-target="#myModal">Feedback</a> 
+									&nbsp;&nbsp; Built by the <a data-toggle="modal" data-target="#myModal">Government Digital Service</a></p>
 								<p>	<img height="17" src="../resources/img/ogl_logo.png"></img>&nbsp;All content is available under the Open Government Licence v3.0, except where otherwise stated</p>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 gds-cw-img">

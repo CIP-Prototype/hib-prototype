@@ -50,9 +50,9 @@
 	                </div>
 									<div>
 										<p>12 Devonshire Avenue, Leeds, West Yorkshire, LS8 1AY</p>
-										<a>View on a map and get directions</a>
+										<a data-toggle="modal" data-target="#myModal">View on a map and get directions</a>
 										<br/>
-										<br/><a>Read more on the Practice website</a>
+										<br/><a data-toggle="modal" data-target="#myModal">Read more on the Practice website</a>
 
 										<h2 style="color: #0070c9;">Call 0113 2371128</h2>
 										<hr/>
@@ -129,7 +129,7 @@
 										</div>
 									</div>
 									<br/>
-									<a>Find other GP Practices in the area</a>
+									<a data-toggle="modal" data-target="#myModal">Find other GP Practices in the area</a>
 									<br/>
 									<br/>
 									<div style="color: #ffb900;">
@@ -139,7 +139,7 @@
 										<i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
 										<i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
 									</div>
-									<a>Read 21 patient reviews</a>
+									<a data-toggle="modal" data-target="#myModal">Read 21 patient reviews</a>
 								</div>
 								<hr/>
 								<!-- Register End -->
@@ -154,13 +154,13 @@
 										<a class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="bookGP">Book a GP appointment</a>
 									</div>
 									<div class="clearfix">
-										<a>Book other services offered at the practice</a>
+										<a data-toggle="modal" data-target="#myModal">Book other services offered at the practice</a>
 										<p>If you have booked an appointment you can prepare by reading about your symptoms or condition</p>
 									</div>
 									<div class="clearfix">
 									    <div class="input-group col-xs-12 col-sm-12 col-md-5 col-lg-4">
-									      <input type="text" class="form-control" placeholder="Search for symptoms...">
-									      <span class="input-group-btn">
+									      <input type="text" class="form-control" placeholder="Search for symptoms..." data-toggle="modal" data-target="#myModal">
+									      <span class="input-group-btn" data-toggle="modal" data-target="#myModal">
 									        <button class="btn btn-primary icon-input-btn" type="button"><i class="fa fa-search"></i></button>
 									      </span>
 									    </div>
@@ -185,36 +185,37 @@
 								<hr/>
 								<!-- Prescription End -->
 
-								<!-- Diabetes Start -->
-								<!--<div class="clearfix">
-									<div class="clearfix">
-										<h2>Type 2 diabetes planner</h2>
-										<ul>
-											<li>book and manage appointments</li>
-											<li>renew prescriptions</li>
-	    								<li>set text reminders for tests and prescriptions</li>
-										</ul>
-									</div>
-									<div class="clearfix">
-										<a class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="viewPlanner">View planner</a>
-									</div>
-								</div>
-								<hr/>-->
-								<!-- Diabetes End -->
-
 								<!-- Other Services Start -->
 								<div class="clearfix">
 									<h2>Other local health services</h2>
 									<span style="display: inline-block;">
 										<p>If you can't get an appointment immediately, you may be able to get help at a
-										<a>Pharmacy</a>
+										<a data-toggle="modal" data-target="#myModal">Pharmacy</a>
 										or
-										<a>Walk in centre.</a></p>
-										<a>View local Pharmacies and Walk in centre</a>
+										<a data-toggle="modal" data-target="#myModal">Walk in centre.</a></p>
+										<a data-toggle="modal" data-target="#myModal">View local Pharmacies and Walk in centre</a>
 									</span>
 								</div>
 								<!-- Other Services End -->
-
+								
+								<!-- Modal -->
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<h4 class="modal-title" id="myModalLabel">Demo Endpoint</h4>
+											</div>
+											<div class="modal-body">
+												This button is disabled in the demo. Click close to continue.
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal End -->
               </div>
             </div>
           </div>

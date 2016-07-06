@@ -24,15 +24,9 @@ function radioSelect (option) {
 function radioEnter () {
 
 				if (radioOption == 'yes') {
-					// $("#chooser").hide();
-					// $("#createAccount").hide();
-					// $("#selector").show();
 					window.location.href = 'signin-selector.html'				
 				}
 				else if (radioOption == 'create'){
-					// $("#chooser").hide();
-					// $("#selector").hide();
-					// $("#createAccount").show();
 					window.location.href = 'create-account.html'	
 				}
 			 	else if (radioOption == 'continue'){
