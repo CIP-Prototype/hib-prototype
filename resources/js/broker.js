@@ -23,17 +23,15 @@ function radioSelect (option) {
 
 function radioEnter () {
 
-				if (radioOption == 'yes') {
-					// $("#chooser").hide();
-					// $("#createAccount").hide();
-					// $("#selector").show();
-					window.location.href = 'signin-selector.html'				
+				if( radioOption == 'yes') {
+					$("#chooser").hide();
+					$("#createAccount").hide();
+					$("#selector").show();				
 				}
 				else if (radioOption == 'create'){
-					// $("#chooser").hide();
-					// $("#selector").hide();
-					// $("#createAccount").show();
-					window.location.href = 'create-account.html'	
+					$("#chooser").hide();
+					$("#selector").hide();
+					$("#createAccount").show();
 				}
 			 	else if (radioOption == 'continue'){
 						if (sessionStorage.app == "bookGP" ) {
