@@ -6,6 +6,7 @@ $(window).load(function() {
 	$("#create").click({radioOption:"create"},radioSelect);
 	$("#continue").click({radioOption:"continue"},radioSelect);
 	$("#Next").click(radioEnter);
+	$("#registerHere").click(showCreatePage);
 	
 	if (sessionStorage.app == "orderPresc" || sessionStorage.app == "viewPlanner") {
 		$("#noLogIn").hide();
@@ -14,7 +15,7 @@ $(window).load(function() {
 	if (sessionStorage.app == "orderPresc") {
 		$("#verify").hide();
 	}	
-
+	
 });
 
 function radioSelect (option) {
@@ -47,4 +48,10 @@ function radioEnter () {
 							window.location.href = 'your-app-biometric.html'
 						}
 				}
+};
+
+function showCreatePage () {
+	$("#chooser").hide();
+	$("#selector").hide();
+	$("#createAccount").show();
 };
