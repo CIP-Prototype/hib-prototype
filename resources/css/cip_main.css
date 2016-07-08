@@ -6776,9 +6776,6 @@ label {
 .content-text {
   margin-bottom: 30px;
 }
-p a {
-  cursor: pointer;
-}
 .lead p {
   font-size: 1.263rem;
 }
