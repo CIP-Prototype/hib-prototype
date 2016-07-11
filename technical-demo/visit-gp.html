@@ -2,98 +2,93 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 	<head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Visit Your GP</title>
-	
-	<link rel="icon" href="../resources/img/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="../resources/css/cip_main.css" media="screen" type="text/css" />
-	
-	<script type="text/javascript" src="../resources/js/jquery-2.2.4.min.js"></script>
-	<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Visit Your GP</title>
+
+		<link rel="icon" href="../resources/img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../resources/css/cip_main.css" media="screen" type="text/css" />
+
+		<script type="text/javascript" src="../resources/js/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
 	</head>
-	
+
 	<body class="">
-        <!--Blue Header -->
-        <section class="section" id="header"> <!--css class header-main for the blue heading bar -->
-            <div class="container header-main header-nhs">
-                <div class="row">
-                    <div class= "container-fluid header-logo col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                        <div class="row">
-                            <a><img height="30" alt="Brand" src="../resources/img/nhs_trans.png"></img></a>
-                        </div>
-                    </div>
-                </div>
+    <!--Header -->
+    <section class="section" id="header">
+      <div class="container header-main header-nhs">
+        <div class="row">
+          <div class= "container-fluid header-logo col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="row">
+              <a><img height="30" alt="Brand" src="../resources/img/nhs_trans.png"></img></a>
             </div>
-        </section>
-           
-        <!-- L Blue Sub-Header -->
-        <section class="section" id="sub-header">
-            <div class="container header-sub">
-                <div class="row">
-                </div>
-            </div>
-        </section>
-        
-        <!-- Main Body -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="sub-header">
+      <div class="container header-sub">
+        <div class="row">
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Body -->
 		<section class="section" id="content">
-        	<div class="login-pf-lg standardText">
-            	<div class="container container-wrapper">
-                	<div class="row">
-                    	<!-- ccs class content-wrapper is only needed when a button imediately proceeds it (fixes some spacing weirdness) -->
-                    	<div class="container-fluid content-text col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                        	<div class="row">
-                            	<!--Main heaing, sub heading and lead paragraph, if using the progress sub-header css class inc-prog-sh is needed -->
-                            	<div class="lead">
-                                	<h1>
-                                		Unable to access page
-                                	</h1>
-                            	</div> 
-                            	<div>
-                                    <ul>
-                                        <li>This page requires you to sign in with Patient Online</li>
-                                        <li>If you do not already have a Patient Online account and require more information, please visit your local GP</li>
-                                        <li>
-                                            <p>You can save some time at the surgery by pre-registering some of your details 
-                                                <a href="create-account.html" id="preRegister">
-                                                here       
-                                                </a>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                    <p>If you already have a Patient Online account, click here to sign in</p>
-                                    <a href="patient-online-signin.html" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-5" id="signIn">
-                            		    Sign in with Patient Online &nbsp; 
-                            			<i class="fa fa-chevron-right"></i>
-                            		</a> 
-                            	</div>                         	
-                        	</div>
-                    	</div>
-                	</div>
-            	</div>
-        	</div>
-        </section>
-        
-        <!-- Footer -->
-        <section class="section" id="sub-footer">
-		    <div class="container footer-sub">
-		        <div class="row"></div>
-		    </div>
-    	</section>
-        <footer class="footer">
+      <div class="login-pf-lg standardText">
+        <div class="container container-wrapper">
+          <div class="row">
+            <div class="container-fluid content-text col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+              <div class="row">
+                <div class="lead">
+                  <h1>Unable to access page</h1>
+                </div>
+                <div>
+                  <ul>
+                    <li>This page requires you to sign in with Patient Online</li>
+                    <li>If you do not already have a Patient Online account and require more information, please visit your local GP</li>
+                    <li>
+                      <p>You can save some time at the surgery by pre-registering some of your details
+                        <a role="button" href="create-account.html" id="preRegister">
+                          here
+                        </a>
+                      </p>
+                    </li>
+                  </ul>
+                  <br/>
+                  <p>If you already have a Patient Online account, click here to sign in</p>
+                  <a role="button" href="patient-online-signin.html" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-5" id="signIn">
+                    Sign in with Patient Online &nbsp;
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="section" id="sub-footer">
+			<div class="container footer-sub">
+		    <div class="row"></div>
+		  </div>
+    </section>
+    <footer class="footer">
 		  <div class="container container-wrapper">
 		    <div class="row">
 		      <div class="container-fluid col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 		        <div class="row">
 		          <p>
-		            <br></br>
-		            &copy; Crown copyright
-		            <br></br>
-		            Content available under
-		            <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>
+		            <br/>
+								<br/>&copy; Crown copyright
+		            <br/>
+								<br/>Content available under
+		            <a role="button" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>
 		            , except where otherwise stated.
-		            <br></br>
+		            <br/>
+								<br/>
 		          </p>
 		        </div>
 		      </div>
