@@ -15,8 +15,8 @@
 	</head>
 
 	<body class="">
-    <!--Blue Header -->
-		<section class="section" id="header"> <!--css class header-main for the blue heading bar -->
+    <!--Header -->
+		<section class="section" id="header">
 			<div class="container header-main header-nhs">
 				<div class="row">
 					<div class= "container-fluid header-logo col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
@@ -27,8 +27,6 @@
 				</div>
 			</div>
     </section>
-
-    <!-- L Blue Sub-Header -->
     <section class="section" id="sub-header">
 			<div class="container header-sub">
         <div class="row"></div>
@@ -40,22 +38,19 @@
     	<div class="login-pf-lg standardText">
         <div class="container container-wrapper">
           <div class="row">
-          	<!-- ccs class content-wrapper is only needed when a button immediately proceeds it (fixes some spacing weirdness) -->
             <div class="container-fluid content-text col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
               <div class="row">
-                <!--Main heaing, sub heading and lead paragraph, if using the progress sub-header css class inc-prog-sh is needed -->
 								<div class="clearfix">
 									<div class="lead">
 	                  <h1>Street Lane Practice</h1>
 	                </div>
 									<div>
 										<p>12 Devonshire Avenue, Leeds, West Yorkshire, LS8 1AY</p>
-										<a data-toggle="modal" data-target="#myModal">View on a map and get directions</a>
+										<a role="button" data-toggle="modal" data-target="#myModal">View on a map and get directions</a>
 										<br/>
-										<br/><a data-toggle="modal" data-target="#myModal">Read more on the Practice website</a>
-
+										<br/><a role="button" data-toggle="modal" data-target="#myModal">Read more on the Practice website</a>
 										<h2 style="color: #0070c9;">Call 0113 2371128</h2>
-										<hr/>
+										<hr>
 									</div>
 								</div>
 
@@ -63,8 +58,7 @@
 								<div class="clearfix">
 									<div class="bs-callout bs-callout-success">
 	  								<h2>Reception is open now</h2>
-										<br/>
-										Reception will close at 6pm this evening
+										<br/>Reception will close at 6pm this evening
 										<br/>Please enquire about test results from 2pm to 5pm
 									</div>
 									<a role="button" data-toggle="collapse" href="#openingTimes" id="openingTimesLink">
@@ -74,8 +68,7 @@
 									<div class="collapse" id="openingTimes">
 										<div class="bs-callout bs-callout-default">
 											<h3>Training & Bank Holidays</h3>
-											<br/>
-											Bank Holiday 2nd May 2016 : Closed
+											<br/>Bank Holiday 2nd May 2016 : Closed
 											<br/>
 											<br/>Tuesday 3rd May 2016 : Training Day
 										</div>
@@ -116,7 +109,7 @@
 										</table>
 									</div>
 								</div>
-								<hr/>
+								<hr>
 								<!-- Opening Times End -->
 
 								<!-- Register Start -->
@@ -128,8 +121,7 @@
 											We are currently not accepting new patients
 										</div>
 									</div>
-									<br/>
-									<a data-toggle="modal" data-target="#myModal">Find other GP Practices in the area</a>
+									<br/><a role="button" data-toggle="modal" data-target="#myModal">Find other GP Practices in the area</a>
 									<br/>
 									<br/>
 									<div style="color: #ffb900;">
@@ -139,9 +131,9 @@
 										<i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
 										<i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
 									</div>
-									<a data-toggle="modal" data-target="#myModal">Read 21 patient reviews</a>
+									<a role="button" data-toggle="modal" data-target="#myModal">Read 21 patient reviews</a>
 								</div>
-								<hr/>
+								<hr>
 								<!-- Register End -->
 
 								<!-- Book an appointment Start -->
@@ -151,10 +143,10 @@
 										<p>You can book an appointment with a GP online</p>
 									</div>
 									<div class="clearfix">
-										<a class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="bookGP">Book a GP appointment</a>
+										<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="bookGP">Book a GP appointment</a>
 									</div>
 									<div class="clearfix">
-										<a data-toggle="modal" data-target="#myModal">Book other services offered at the practice</a>
+										<a role="button" data-toggle="modal" data-target="#myModal">Book other services offered at the practice</a>
 										<p>If you have booked an appointment you can prepare by reading about your symptoms or condition</p>
 									</div>
 									<div class="clearfix">
@@ -166,7 +158,7 @@
 									    </div>
 									</div>
 								</div>
-								<hr/>
+								<hr>
 								<!-- Book an appointment End -->
 
 								<!-- Prescription Start -->
@@ -179,10 +171,10 @@
 										</ul>
 									</div>
 									<div class="clearfix">
-										<a class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="orderPresc">Order a repeat prescription</a>
+										<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="orderPresc">Order a repeat prescription</a>
 									</div>
 								</div>
-								<hr/>
+								<hr>
 								<!-- Prescription End -->
 
 								<!-- Diabetes Start -->
@@ -196,12 +188,12 @@
 										</ul>
 									</div>
 									<div class="clearfix">
-										<a class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="viewPlanner">View planner</a>
+										<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="viewPlanner">View planner</a>
 									</div>
 								</div>
-								<hr/>
+								<hr>
 								<!-- Diabetes End -->
-								
+
 								<!-- Your App Start -->
 								<div class="clearfix">
 									<div class="clearfix">
@@ -211,10 +203,10 @@
 										</ul>
 									</div>
 									<div class="clearfix">
-										<a class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="yourApp">Your App</a>
+										<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="yourApp">Your App</a>
 									</div>
 								</div>
-								<hr/>
+								<hr>
 								<!-- Your App End -->
 
 								<!-- Other Services Start -->
@@ -222,14 +214,14 @@
 									<h2>Other local health services</h2>
 									<span style="display: inline-block;">
 										<p>If you can't get an appointment immediately, you may be able to get help at a
-										<a data-toggle="modal" data-target="#myModal">Pharmacy</a>
+										<a role="button" data-toggle="modal" data-target="#myModal">Pharmacy</a>
 										or
-										<a data-toggle="modal" data-target="#myModal">Walk in centre.</a></p>
-										<a data-toggle="modal" data-target="#myModal">View local Pharmacies and Walk in centre</a>
+										<a role="button" data-toggle="modal" data-target="#myModal">Walk in centre.</a></p>
+										<a role="button" data-toggle="modal" data-target="#myModal">View local Pharmacies and Walk in centre</a>
 									</span>
 								</div>
 								<!-- Other Services End -->
-								
+
 								<!-- Modal -->
 								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 									<div class="modal-dialog" role="document">
