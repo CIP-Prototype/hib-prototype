@@ -1,10 +1,10 @@
 
 $(window).load(function() {
 
-	$("#bookGP").click({appName:"bookGP"}, chosenApp);
-  $("#orderPresc").click({appName:"orderPresc"}, chosenApp);
-  $("#viewPlanner").click({appName:"viewPlanner"}, chosenApp);
-  $("#yourApp").click({appName:"yourApp"}, chosenApp);
+	$("#appointmentComplete").click({appName:"bookGP"}, chosenApp);
+  $("#prescriptionComplete").click({appName:"orderPresc"}, chosenApp);
+  $("#diabetesComplete").click({appName:"viewPlanner"}, chosenApp);
+  $("#yourappComplete").click({appName:"yourApp"}, chosenApp);
 
   $('#openingTimesLink').click(function (e){
 		$(e.target).children().toggleClass('fa-caret-down fa-caret-right');
