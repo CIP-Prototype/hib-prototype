@@ -12,6 +12,17 @@
 		<script type="text/javascript" src="../resources/js/jquery-2.2.4.min.js"></script>
 		<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../resources/js/diabetes-complete.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-82494527-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
 	</head>
 
 	<body class="">
@@ -40,20 +51,20 @@
 			</div>
 		</section>
     <!-- 2nd L Blue Sub Header - Hidden at md & lg screen sized, used for signout button on xs & sm screen sizes -->
-		<section class="section hidden-md hidden-lg" id="sub-header">
+		<section class="section hidden-md hidden-lg" id="sub-header-mob1">
 				<!--css class header-sub for the thin line or header-sub-expanded for thicker band and sub-heading -->
 			<div class="container header-sub-expanded">
 				<div class="row">
 					<div class= "container-fluid">
 						<div class="row">
-							<a role="button" href="diabetes-signedout.html" class="btn btn-primary btn-warning-so col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 hidden-md hidden-lg" type="submit" id="signOut">Sign out</a>
+							<a role="button" href="diabetes-signedout.html" class="btn btn-primary btn-warning-so col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 hidden-md hidden-lg" type="submit" id="signOut-mob">Sign out</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- 3rd L Blue Sub Header - Hidden at md & lg screen sized, used for signout button on xs & sm screen sizes -->
-		<section class="section hidden-md hidden-lg" id="sub-header">
+		<section class="section hidden-md hidden-lg" id="sub-header-mob2">
 			<!--css class header-sub for the thin line or header-sub-expanded for thicker band and sub-heading -->
 			<div class="container header-sub-expanded"></div>
 		</section>
@@ -82,7 +93,7 @@
 									<h3>Your details</h3>
 								</div>
 								<!-- Your Details Accordion Start -->
-								<div class="panel-group" id="accordion">
+								<div class="panel-group" id="yourDetails-accordion">
 									<div class="panel panel-primary">
 										<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A1C1" style="cursor: pointer">
 											<h4>
@@ -163,7 +174,7 @@
 										<h3>Things to do now</h3>
 									</div>
 							  	<!-- Things to do Accordion Start -->
-									<div class="panel-group" id="accordion">
+									<div class="panel-group" id="thingsToDo-accordion">
 							  		<div class="panel panel-info">
 							    		<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A2C1" style="cursor: pointer">
 												<h4>
@@ -238,7 +249,7 @@
 										<h3>Appointments and reminders</h3>
 									</div>
 									<!-- Your Details Accordion Start -->
-									<div class="panel-group" id="accordion">
+									<div class="panel-group" id="presciptions-accordion">
 										<div class="panel panel-primary">
 											<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#A3C1" style="cursor: pointer">
 													<h4>

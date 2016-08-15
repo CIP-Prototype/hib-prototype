@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 	<head>
@@ -12,10 +12,21 @@
 		<script type="text/javascript" src="../resources/js/jquery-2.2.4.min.js"></script>
 		<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../resources/js/prescriptions-complete.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-82494527-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
 	</head>
 
 	<body class="">
-    <!--Header -->
+		<!--Header -->
 		<section class="section" id="header">
 			<div class="container header-main header-nhs">
 				<div class="row">
@@ -26,7 +37,7 @@
 					</div>
 				</div>
 			</div>
-    </section>
+		</section>
 		<section class="section" id="sub-header">
 			<div class="container header-sub-expanded">
 				<div class="row">
@@ -39,8 +50,8 @@
 				</div>
 			</div>
 		</section>
-    <!-- 2nd L Blue Sub Header - Hidden at md & lg screen sized, used for signout button on xs & sm screen sizes -->
-		<section class="section hidden-md hidden-lg" id="sub-header">
+		<!-- 2nd L Blue Sub Header - Hidden at md & lg screen sized, used for signout button on xs & sm screen sizes -->
+		<section class="section hidden-md hidden-lg" id="sub-header-mob1">
 		<!--css class header-sub for the thin line or header-sub-expanded for thicker band and sub-heading -->
 			<div class="container header-sub-expanded">
 				<div class="row">
@@ -53,19 +64,19 @@
 			</div>
 		</section>
 		<!-- 3rd L Blue Sub Header - Hidden at md & lg screen sized, used for signout button on xs & sm screen sizes -->
-		<section class="section hidden-md hidden-lg" id="sub-header">
+		<section class="section hidden-md hidden-lg" id="sub-header-mob2">
 		<!--css class header-sub for the thin line or header-sub-expanded for thicker band and sub-heading -->
 			<div class="container header-sub-expanded">
 			</div>
 		</section>
 
-    <!-- Main Body -->
+		<!-- Main Body -->
 		<section class="section" id="content">
-    	<div class="login-pf-lg standardText">
-        <div class="container container-wrapper">
-          <div class="row">
-            <div class="container-fluid content-text col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-              <div class="row">
+			<div class="login-pf-lg standardText">
+				<div class="container container-wrapper">
+					<div class="row">
+						<div class="container-fluid content-text col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+							<div class="row">
 									<div class="lead">
 										<h1>Reorder My Repeat Prescription</h1>
 									</div>
@@ -73,176 +84,176 @@
 										<h3>Click and Collect your Prescription from your nominated Pharmacy</h3>
 									</div>
 									<hr>
+							</div>
+							<div class="clearfix">
+								<h2>Maurice Hutter</h2>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+									<strong>
+										Home address
+									</strong>
+									<p>12 Devonshire Avenue
+										<br/>Leeds
+										<br/>West Yorkshire
+										<br/>LS8 1AY
+									</p>
 								</div>
-								<div class="clearfix">
-									<h2>Maurice Hutter</h2>
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+									<strong>Date of birth/NHS No.</strong>
+									<p>23rd March 1970</p>
+									<strong>NHS Number</strong>
+									<p>987654321</p>
 								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+									<strong>Email</strong>
+									<p>mauricehutter@email.com</p>
+								</div>
+							</div>
+							<hr>
+							<div class="clearfix">
+								<h2>Payment Exemption Form</h2>
 								<br/>
-								<div class="row">
-									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-										<strong>
-											Home address
-										</strong>
-										<p>12 Devonshire Avenue
+								<p>If you don't pay for your prescriptions, click here to fill out a prescription exemption form:</p>
+								<br/>
+								<div class="clearfix">
+									<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="prescExempt" data-toggle="modal" data-target="#myModal">
+										Exemption Form &nbsp; <i class="fa fa-chevron-right"></i>
+									</a>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-lg-12">
+									<h2>Nominated Pharmacy</h2>
+									<div>
+										<strong>Home address</strong>
+										<p>
+											12 Devonshire Avenue
 											<br/>Leeds
 											<br/>West Yorkshire
 											<br/>LS8 1AY
 										</p>
 									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-										<strong>Date of birth/NHS No.</strong>
-										<p>23rd March 1970</p>
-										<strong>NHS Number</strong>
-										<p>987654321</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-										<strong>Email</strong>
-										<p>mauricehutter@email.com</p>
-									</div>
-								</div>
-								<hr>
-								<div class="clearfix">
-									<h2>Payment Exemption Form</h2>
-									<br/>
-									<p>If you don't pay for your prescriptions, click here to fill out a prescription exemption form:</p>
-									<br/>
 									<div class="clearfix">
-										<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="prescExempt" data-toggle="modal" data-target="#myModal">
-											Exemption Form &nbsp; <i class="fa fa-chevron-right"></i>
+										<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="otherPharms" data-toggle="modal" data-target="#myModal">
+											Other Pharmacies &nbsp; <i class="fa fa-chevron-right"></i>
 										</a>
 									</div>
 								</div>
-								<hr>
-								<div class="row">
-									<div class="col-lg-12">
-										<h2>Nominated Pharmacy</h2>
-										<div>
-											<strong>Home address</strong>
-											<p>
-												12 Devonshire Avenue
-												<br/>Leeds
-												<br/>West Yorkshire
-												<br/>LS8 1AY
-											</p>
-										</div>
-										<div class="clearfix">
-											<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="otherPharms" data-toggle="modal" data-target="#myModal">
-												Other Pharmacies &nbsp; <i class="fa fa-chevron-right"></i>
-											</a>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-lg-12">
+									<h2>Current Prescription</h2>
+									<div class="clearfix">
+										<div class="radio-inline">
+											<label class="block-label block-label-inline">
+												<input type="radio" name="currentPresc" id="ibuprofen" value="ibuprofen">
+												<strong>Ibuprofen tablets (200mg)</strong>
+												<br/>Take one daily until course finishes
+											</label>
 										</div>
 									</div>
-								</div>
-								<hr>
-								<div class="row">
-									<div class="col-lg-12">
-										<h2>Current Prescription</h2>
-										<div class="clearfix">
-											<div class="radio-inline">
-												<label class="block-label block-label-inline">
-													<input type="radio" name="currentPresc" id="ibuprofen" value="ibuprofen">
-													<strong>Ibuprofen tablets (200mg)</strong>
-													<br/>Take one daily until course finishes
-												</label>
-											</div>
-										</div>
 
-										<div class="clearfix">
-											<div class="radio-inline">
-												<label class="block-label block-label-inline">
-													<input type="radio" name="currentPresc" id="patanol" value="patanol">
-													<strong>Patanol Olopatadine hydrochloride ophthalmic solution 0.1%</strong><br/>
-													Use eye drops every 8 hours (eyes only) 15ml
-												</label>
-											</div>
+									<div class="clearfix">
+										<div class="radio-inline">
+											<label class="block-label block-label-inline">
+												<input type="radio" name="currentPresc" id="patanol" value="patanol">
+												<strong>Patanol Olopatadine hydrochloride ophthalmic solution 0.1%</strong><br/>
+												Use eye drops every 8 hours (eyes only) 15ml
+											</label>
 										</div>
+									</div>
 
-										<div class="clearfix">
-											<div class="radio-inline">
-												<label class="block-label block-label-inline">
-													<input type="radio" name="currentPresc" id="paracetamol" value="paracetamol">
-													<strong>Paracetamol 500mg</strong>
-												</label>
-											</div>
+									<div class="clearfix">
+										<div class="radio-inline">
+											<label class="block-label block-label-inline">
+												<input type="radio" name="currentPresc" id="paracetamol" value="paracetamol">
+												<strong>Paracetamol 500mg</strong>
+											</label>
 										</div>
+									</div>
 
-										<br/>
-										<div class="clearfix">
-											<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="reorderPresc" data-toggle="modal" data-target="#myModal">
-												Reorder Prescription &nbsp; <i class="fa fa-chevron-right"></i>
-											</a>
-										</div>
-										<!-- Modal -->
-										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-														<h4 class="modal-title" id="myModalLabel">Demo Endpoint</h4>
-													</div>
-													<div class="modal-body">
-														This button is disabled in the demo. Click close to continue.
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-													</div>
+									<br/>
+									<div class="clearfix">
+										<a role="button" class="btn btn-primary col-xs-12 col-sm-12 col-md-5 col-lg-4" id="reorderPresc" data-toggle="modal" data-target="#myModal">
+											Reorder Prescription &nbsp; <i class="fa fa-chevron-right"></i>
+										</a>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+													<h4 class="modal-title" id="myModalLabel">Demo Endpoint</h4>
+												</div>
+												<div class="modal-body">
+													This button is disabled in the demo. Click close to continue.
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <!-- Footer -->
-    <section class="section" id="sub-footer">
-		  <div class="container footer-sub">
-		    <div class="row"></div>
-		  </div>
-    </section>
-    <footer class="footer">
-		  <div class="container container-wrapper">
-		    <div class="row">
-		      <div class="container-fluid col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-		        <div class="row">
-		          <p>
-		            <br/>
-								<br/>&copy; Crown copyright
-		            <br/>
-								<br/>Content available under
-		            <a role="button" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>
-		            , except where otherwise stated.
-		            <br/>
+		</section>
+
+		<!-- Footer -->
+		<section class="section" id="sub-footer">
+			<div class="container footer-sub">
+				<div class="row"></div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container container-wrapper">
+				<div class="row">
+					<div class="container-fluid col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						<div class="row">
+							<p>
 								<br/>
-		          </p>
-		        </div>
+								<br/>&copy; Crown copyright
+								<br/>
+								<br/>Content available under
+								<a role="button" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>
+								, except where otherwise stated.
+								<br/>
+								<br/>
+							</p>
+						</div>
 						<div class="row hidden-xs hidden-sm">
-		          <p>
-		            <a role="button" href="appointment-start.html" id="appointmentLink">Appointment</a>
-		            |
-		            <a role="button" href="diabetes-start.html" id="diabetesLink">Diabetes</a>
+							<p>
+								<a role="button" href="appointment-start.html" id="appointmentLink">Appointment</a>
 								|
-		            <a role="button" href="your-app-start.html" id="yourAppLink">Your App</a>
+								<a role="button" href="diabetes-start.html" id="diabetesLink">Diabetes</a>
+								|
+								<a role="button" href="your-app-start.html" id="yourAppLink">Your App</a>
 								|
 								<a role="button" href="gp-home-portal.html#prescriptionSection" id="gpPortalLink">GP Home Portal</a>
-		          </p>
-		        </div>
-		        <div class="row hidden-md hidden-lg">
-		          <a role="button" href="appointment-start.html" class="btn btn-primary col-xs-12 col-sm-12" id="appointmentLinkMob">Appointment</a>
-		  	      <a role="button" href="diabetes-start.html" class="btn btn-primary col-xs-12 col-sm-12" id="diabetesLinkMob">Diabetes</a>
-		  	      <a role="button" href="your-app-start.html" class="btn btn-primary col-xs-12 col-sm-12" id="yourAppLinkMob">Your App</a>
+							</p>
+						</div>
+						<div class="row hidden-md hidden-lg">
+							<a role="button" href="appointment-start.html" class="btn btn-primary col-xs-12 col-sm-12" id="appointmentLinkMob">Appointment</a>
+							<a role="button" href="diabetes-start.html" class="btn btn-primary col-xs-12 col-sm-12" id="diabetesLinkMob">Diabetes</a>
+							<a role="button" href="your-app-start.html" class="btn btn-primary col-xs-12 col-sm-12" id="yourAppLinkMob">Your App</a>
 							<a role="button" href="gp-home-portal.html#prescriptionSection" class="btn btn-primary col-xs-12 col-sm-12" id="gpPortalLinkMob">GP Home Portal</a>
-		        </div>
-		        <br/>
+						</div>
 						<br/>
-		      </div>
-		    </div>
-		  </div>
+						<br/>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
