@@ -76,3 +76,7 @@ ul.goback a {
     margin-left: auto;
     vertical-align: middle
 }
+input[type='radio']:checked + .form-control-radio:before {
+    line-height: 1.7rem;
+    text-indent: 3px;
+}
